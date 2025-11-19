@@ -799,6 +799,35 @@
             background-size: 200% 200%;
             animation: gradient-shift 3s ease infinite;
         }
+
+        /* Perbaikan responsif */
+        @media (max-width: 640px) {
+            .stats-overlay {
+                width: 90%;
+            }
+            
+            .stats-rectangle {
+                padding: 4px 1px;
+            }
+            
+            .stat-number {
+                font-size: 12px;
+            }
+            
+            .stat-label {
+                font-size: 7px;
+            }
+            
+            .stat-icon {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .stat-icon svg {
+                width: 12px;
+                height: 12px;
+            }
+        }
     </style>
 </head>
 
@@ -913,7 +942,7 @@
                             <path
                                 d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                         </svg>
-                        <span>Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
+                        <span class="text-sm sm:text-base">Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
                             MUI, dan Dinas Kesehatan</span>
                     </p>
 
@@ -925,7 +954,7 @@
                                     d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span class="font-medium">Terdaftar Resmi</span>
+                            <span class="font-medium text-sm">Terdaftar Resmi</span>
                         </div>
                         <div
                             class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-lg hover:bg-white/20 transition">
@@ -934,7 +963,7 @@
                                     d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span class="font-medium">Proses Cepat</span>
+                            <span class="font-medium text-sm">Proses Cepat</span>
                         </div>
                         <div
                             class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-lg hover:bg-white/20 transition">
@@ -945,28 +974,28 @@
                                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span class="font-medium">Harga Terjangkau</span>
+                            <span class="font-medium text-sm">Harga Terjangkau</span>
                         </div>
                     </div>
                     <div class="flex flex-wrap justify-center md:justify-start gap-4">
                         <a href="#konsultasi"
-                            class="premium-button glow-button px-20 py-3 bg-whatsapp hover:bg-green-500 rounded-lg font-semibold text-white transition inline-flex items-center gap-2 relative">
+                            class="premium-button glow-button px-6 sm:px-20 py-3 bg-whatsapp hover:bg-green-500 rounded-lg font-semibold text-white transition inline-flex items-center gap-2 relative">
                             <span class="pulse-dot" style="top: 10px; right: 10px;"></span>
                             <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                             </svg>
-                            <span>Konsultasi Gratis</span>
+                            <span class="text-sm sm:text-base">Konsultasi Gratis</span>
                         </a>
                         <a href="#harga"
-                            class="premium-button px-20 py-3 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg font-semibold text-white transition relative inline-flex items-center gap-2">
+                            class="premium-button px-6 sm:px-20 py-3 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg font-semibold text-white transition relative inline-flex items-center gap-2">
                             <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                                 <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
                                 <path fill-rule="evenodd"
                                     d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span>Lihat Paket Harga</span>
+                            <span class="text-sm sm:text-base">Lihat Paket Harga</span>
                         </a>
                     </div>
                 </div>
@@ -1036,7 +1065,7 @@
                             <path
                                 d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
                         </svg>
-                        <span>Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
+                        <span class="text-sm sm:text-base">Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
                             MUI, dan Dinas Kesehatan</span>
                     </p>
 
@@ -1048,7 +1077,7 @@
                                 <path
                                     d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
                             </svg>
-                            <span>Konsultasi Gratis</span>
+                            <span class="text-sm sm:text-base">Konsultasi Gratis</span>
                         </a>
                         <a href="#harga"
                             class="premium-button px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg font-semibold text-white transition relative inline-flex items-center gap-2">
@@ -1058,7 +1087,7 @@
                                     d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
                                     clip-rule="evenodd" />
                             </svg>
-                            <span>Lihat Paket Harga</span>
+                            <span class="text-sm sm:text-base">Lihat Paket Harga</span>
                         </a>
                     </div>
                 </div>
@@ -1122,25 +1151,25 @@
     </section>
 
 
-    <section class="max-w-7xl mx-auto fade-in mt-10" aria-labelledby="halal-certification-title">
+    <section class="max-w-6xl mx-auto fade-in mt-10" aria-labelledby="halal-certification-title">
         <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <header class="flex flex-col items-center justify-center">
                 <div class="relative inline-flex items-center mb-6">
                     <div
-                        class="bg-red-700 rounded-full px-12 sm:px-16 md:px-20 py-3 flex items-center justify-center gap-4 shadow-xl w-fit">
+                        class="bg-red-700 rounded-full px-6 sm:px-8 md:px-12 lg:px-16 py-3 flex items-center justify-center gap-4 shadow-xl w-fit">
                         <h2 id="halal-certification-title"
-                            class="text-[#FFC700] text-xl sm:text-2xl md:text-3xl font-extrabold whitespace-nowrap animate-pulse">
+                            class="text-[#FFC700] text-lg sm:text-xl md:text-2xl font-extrabold whitespace-nowrap animate-pulse">
                             KEWAJIBAN SERTIFIKASI HALAL
                         </h2>
                     </div>
                     <img src="img/warning.png" alt="Ikon Peringatan"
-                        class="absolute right-0 -mr-6 w-12 h-auto z-20 md:-mr-8 md:w-16">
+                        class="absolute right-0 -mr-4 sm:-mr-6 w-8 h-auto z-20 md:w-12 lg:-mr-8 lg:w-16">
                 </div>
             </header>
 
             <main class="flex flex-col items-center">
                 <div
-                    class="rounded-2xl bg-red-50 border border-red-200 p-6 flex flex-col md:flex-row items-start gap-4 mt-6 w-full max-w-5xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    class="rounded-2xl bg-red-50 border border-red-200 p-4 sm:p-6 flex flex-col md:flex-row items-start gap-4 mt-6 w-full max-w-5xl shadow-sm hover:shadow-md transition-shadow duration-300">
                     <div class="flex-1">
                         <div class="flex items-start gap-3">
                             <div class="bg-red-100 rounded-full p-2 flex-shrink-0">
@@ -1151,7 +1180,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-bold text-red-700 mb-2">Berdasarkan Undang-Undang</h3>
+                                <h3 class="font-bold text-red-700 mb-2 text-sm sm:text-base">Berdasarkan Undang-Undang</h3>
                                 <p class="text-sm sm:text-base text-gray-700">
                                     Undang-Undang Nomor 33 Tahun 2014 Pasal 4 tegas menyatakan bahwa seluruh produk yang
                                     masuk, beredar dan diperdagangkan di wilayah Indonesia wajib bersertifikat halal,
@@ -1171,7 +1200,7 @@
                                 </svg>
                             </div>
                             <div>
-                                <h3 class="font-bold text-blue-700 mb-2">Berlaku Untuk</h3>
+                                <h3 class="font-bold text-blue-700 mb-2 text-sm sm:text-base">Berlaku Untuk</h3>
                                 <p class="text-sm sm:text-base text-gray-700">
                                     Ketentuan ini berlaku bagi seluruh pelaku usaha, termasuk UMKM, dengan tujuan
                                     melindungi konsumen dan memastikan kejelasan status halal produk.
@@ -1183,9 +1212,9 @@
 
                 <!-- Warning moved to main -->
                 <div
-                    class="mt-8 bg-red-700 text-white text-center rounded-xl p-5 flex items-center gap-4 shadow-md hover:bg-red-800 transition-colors duration-300 w-full max-w-5xl">
-                    <span class="text-4xl soft-bounce" role="img" aria-label="Peringatan">🚨</span>
-                    <p class="font-semibold text-base sm:text-lg leading-snug">
+                    class="mt-8 bg-red-700 text-white text-center rounded-xl p-4 sm:p-5 flex items-center gap-4 shadow-md hover:bg-red-800 transition-colors duration-300 w-full max-w-5xl">
+                    <span class="text-2xl sm:text-3xl sm:text-4xl soft-bounce" role="img" aria-label="Peringatan">🚨</span>
+                    <p class="font-semibold text-sm sm:text-base lg:text-lg leading-snug">
                         Pastikan produk Anda memenuhi kewajiban hukum ini untuk menghindari risiko sanksi.
                     </p>
                 </div>
@@ -1194,62 +1223,62 @@
     </section>
     <!-- KEUNGGULAN LAYANAN -->
     <section class="py-20 bg-[#F8FAFC]">
-        <div class="max-w-6xl mx-auto px-6">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
             <!-- Title -->
             <div class="text-center mb-14">
-                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-3">
+                <h2 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-primary mb-3">
                     Mengapa Harus Daftar Lewat Akses Legal?
                 </h2>
-                <p class="text-gray-600 max-w-xl mx-auto">
+                <p class="text-gray-600 max-w-xl mx-auto text-sm sm:text-base">
                     Layanan cepat, pendampingan penuh, dan proses yang transparan tanpa ribet.
                 </p>
             </div>
 
             <!-- 3 Cards -->
-            <div class="grid md:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-3 gap-6 sm:gap-8">
 
                 <!-- Card 1 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
-                    <div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
-                        <span class="text-3xl">🔒</span>
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="text-2xl sm:text-3xl">🔒</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-primary mb-3">
+                    <h3 class="text-lg sm:text-xl font-bold text-primary mb-3">
                         Legalitas Aman & Terjamin
                     </h3>
 
-                    <p class="text-gray-600 leading-relaxed">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Semua proses mengikuti regulasi resmi. Dokumen valid & dapat dipertanggungjawabkan.
                     </p>
                 </div>
 
                 <!-- Card 2 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
-                    <div class="w-16 h-16 rounded-xl bg-[#F3B433]/20 flex items-center justify-center mb-6">
-                        <span class="text-3xl">👥</span>
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#F3B433]/20 flex items-center justify-center mb-6">
+                        <span class="text-2xl sm:text-3xl">👥</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-primary mb-3">
+                    <h3 class="text-lg sm:text-xl font-bold text-primary mb-3">
                         Pendampingan Profesional
                     </h3>
 
-                    <p class="text-gray-600 leading-relaxed">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Tim ahli membantu dari awal hingga sertifikat terbit. Anda tidak jalan sendiri.
                     </p>
                 </div>
 
                 <!-- Card 3 -->
-                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
-                    <div class="w-16 h-16 rounded-xl bg-[#25D366]/20 flex items-center justify-center mb-6">
-                        <span class="text-3xl">⚡</span>
+                <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-12 h-12 sm:w-16 sm:h-16 rounded-xl bg-[#25D366]/20 flex items-center justify-center mb-6">
+                        <span class="text-2xl sm:text-3xl">⚡</span>
                     </div>
 
-                    <h3 class="text-xl font-bold text-primary mb-3">
+                    <h3 class="text-lg sm:text-xl font-bold text-primary mb-3">
                         Proses Cepat & Transparan
                     </h3>
 
-                    <p class="text-gray-600 leading-relaxed">
+                    <p class="text-gray-600 leading-relaxed text-sm sm:text-base">
                         Update berkala sampai tuntas. Semua bisa dipantau tanpa harus bolak-balik kantor.
                     </p>
                 </div>
@@ -1273,25 +1302,25 @@
         <section class="py-20 mt-30 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
 
                     <!-- IMAGE (Mobile: atas / Desktop: kanan) -->
                     <div class="relative flex justify-center order-1 md:order-2">
                         <img src="img/sertifikat halal.jpg" alt="Orang memegang sertifikat"
-                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[450px] object-cover object-[center_55%]">
+                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[300px] sm:h-[400px] lg:h-[450px] object-cover object-[center_55%]">
 
                         <!-- Badge -->
-                        <div class="absolute -bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
-                            bg-accent text-white rounded-xl p-4 shadow-lg">
+                        <div class="absolute -bottom-4 sm:-bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
+                            bg-accent text-white rounded-xl p-3 sm:p-4 shadow-lg">
                             <div class="flex items-center gap-2">
-                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
 
                                 <div>
-                                    <div class="text-2xl font-bold text-white">200+</div>
-                                    <div class="text-sm text-white">Sertifikasi Berhasil</div>
+                                    <div class="text-lg sm:text-xl lg:text-2xl font-bold text-white">200+</div>
+                                    <div class="text-xs sm:text-sm text-white">Sertifikasi Berhasil</div>
                                 </div>
                             </div>
                         </div>
@@ -1299,35 +1328,35 @@
 
                     <!-- TEXT -->
                     <div class="order-2 md:order-1">
-                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 text-white">
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 text-white">
                             Pastikan Produk Anda
                             <span class="text-accent">Halal</span> dan
                             <span class="text-accent">Diakui Secara Resmi</span>
                         </h2>
 
-                        <p class="text-lg opacity-90 mb-6 text-white">
+                        <p class="text-base sm:text-lg opacity-90 mb-6 text-white">
                             Tunjukkan komitmen usaha Anda dengan produk yang terjamin kehalalannya,
                             meningkatkan kepercayaan pelanggan di setiap penjualan.
                         </p>
 
-                        <div class="flex items-center gap-4 mb-8">
+                        <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-8">
 
                             <!-- Halal -->
-                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
-                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="bg-black/10 rounded-lg px-3 py-2 sm:px-4 sm:py-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 
                                 12.91l-5-3.64 5.91-.99L12 2z" />
                                 </svg>
-                                <span class="text-accent font-bold text-xl">Halal</span>
+                                <span class="text-accent font-bold text-lg sm:text-xl">Halal</span>
                             </div>
 
                             <!-- Resmi -->
-                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
-                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="bg-black/10 rounded-lg px-3 py-2 sm:px-4 sm:py-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 
                                 7l-3.5 3.5L7 10l5-5 5 5-1.5 1.5L12 8z" />
                                 </svg>
-                                <span class="text-accent font-bold text-xl">Resmi</span>
+                                <span class="text-accent font-bold text-lg sm:text-xl">Resmi</span>
                             </div>
 
                         </div>
@@ -1342,25 +1371,25 @@
         <section class="py-20 mt-10 text-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 sm:gap-12 items-center">
 
                     <!-- IMAGE (Desktop kiri / Mobile atas) -->
                     <div class="relative flex justify-center order-1">
                         <img src="img/sertifikat pirt.jpg" alt="Orang memegang sertifikat"
-                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[450px] object-cover object-[center_55%]">
+                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[300px] sm:h-[400px] lg:h-[450px] object-cover object-[center_55%]">
 
                         <!-- Badge -->
-                        <div class="absolute -bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
-                            bg-accent text-white rounded-xl p-4 shadow-lg">
+                        <div class="absolute -bottom-4 sm:-bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
+                            bg-accent text-white rounded-xl p-3 sm:p-4 shadow-lg">
                             <div class="flex items-center gap-2">
-                                <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
                                 </svg>
 
                                 <div>
-                                    <div class="text-2xl font-bold text-white">200+</div>
-                                    <div class="text-sm text-white">Sertifikasi Berhasil</div>
+                                    <div class="text-lg sm:text-xl lg:text-2xl font-bold text-white">200+</div>
+                                    <div class="text-xs sm:text-sm text-white">Sertifikasi Berhasil</div>
                                 </div>
                             </div>
                         </div>
@@ -1368,36 +1397,36 @@
 
                     <!-- TEXT -->
                     <div class="order-2">
-                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 text-white">
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold mb-6 text-white">
                             Pastikan Produk Makanan Anda
                             <span class="text-accent">Aman</span>,
                             <span class="text-accent">Higienis</span> dan
                             <span class="text-accent">Siap Edar.</span>
                         </h2>
 
-                        <p class="text-lg opacity-90 mb-6">
+                        <p class="text-base sm:text-lg opacity-90 mb-6">
                             Dengan izin PIRT, usaha Anda mendapat kepastian keamanan pangan dan kepercayaan lebih dari
                             pelanggan dalam setiap penjualan.
                         </p>
 
-                        <div class="flex items-center gap-4 mb-8">
+                        <div class="flex flex-wrap items-center gap-3 sm:gap-4 mb-8">
 
                             <!-- Halal -->
-                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
-                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="bg-black/10 rounded-lg px-3 py-2 sm:px-4 sm:py-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
                                     <path d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 
                                 12.91l-5-3.64 5.91-.99L12 2z" />
                                 </svg>
-                                <span class="text-accent font-bold text-xl">Halal</span>
+                                <span class="text-accent font-bold text-lg sm:text-xl">Halal</span>
                             </div>
 
                             <!-- Resmi -->
-                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
-                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <div class="bg-black/10 rounded-lg px-3 py-2 sm:px-4 sm:py-2 flex items-center gap-2">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
                                     <path
                                         d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 7l-3.5 3.5L7 10l5-5 5 5-1.5 1.5L12 8z" />
                                 </svg>
-                                <span class="text-accent font-bold text-xl">Resmi</span>
+                                <span class="text-accent font-bold text-lg sm:text-xl">Resmi</span>
                             </div>
 
                         </div>
@@ -1415,23 +1444,23 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
             <!-- 1) Tab Capsule: Halal | PIRT -->
             <div class="mb-8">
-                <div class="flex items-center justify-between gap-4 mb-6">
-                    <h3 class="text-2xl font-extrabold text-primary">Manfaat Sertifikasi</h3>
+                <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 mb-6">
+                    <h3 class="text-xl sm:text-2xl font-extrabold text-primary">Manfaat Sertifikasi</h3>
                     <p class="text-sm text-gray-600">Pilih tab untuk melihat perbedaan & manfaat</p>
                 </div>
 
                 <div class="w-full">
                     <!-- Capsule control -->
-                    <div class="inline-flex rounded-full bg-[#E9F2FA] p-1 shadow-sm" role="tablist"
+                    <div class="inline-flex rounded-full bg-[#E9F2FA] p-1 shadow-sm w-full sm:w-auto" role="tablist"
                         aria-label="Pilih sertifikasi">
                         <button id="tab-halal" aria-controls="panel-halal" role="tab" aria-selected="true"
-                            class="relative px-5 md:px-6 py-2 rounded-full bg-white text-primary font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-[#F3B433]/40 transition"
+                            class="relative px-4 sm:px-5 md:px-6 py-2 rounded-full bg-white text-primary font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-[#F3B433]/40 transition text-sm sm:text-base w-1/2 sm:w-auto"
                             onclick="openPanel('halal')">
                             Halal
                         </button>
 
                         <button id="tab-pirt" aria-controls="panel-pirt" role="tab" aria-selected="false"
-                            class="relative px-5 md:px-6 py-2 rounded-full text-primary font-semibold bg-transparent hover:bg-white/60 transition"
+                            class="relative px-4 sm:px-5 md:px-6 py-2 rounded-full text-primary font-semibold bg-transparent hover:bg-white/60 transition text-sm sm:text-base w-1/2 sm:w-auto"
                             onclick="openPanel('pirt')">
                             PIRT
                         </button>
@@ -1444,18 +1473,18 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                                 <!-- Left: content -->
                                 <div>
-                                    <h4 class="text-2xl font-bold text-primary mb-3">Untuk Produk Konsumen & Makanan
+                                    <h4 class="text-xl sm:text-2xl font-bold text-primary mb-3">Untuk Produk Konsumen & Makanan
                                         Olahan</h4>
-                                    <p class="text-gray-700 mb-4">Sertifikat halal membantu membangun kepercayaan
+                                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Sertifikat halal membantu membangun kepercayaan
                                         pelanggan, membuka akses ke segmen pasar muslim, dan menunjukkan komitmen
                                         kualitas dari usaha Anda.</p>
 
                                     <ul class="space-y-3 mb-6">
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F3B433] text-white font-bold">✓</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#F3B433] text-white font-bold text-sm sm:text-base">✓</span>
                                             <div>
-                                                <div class="font-semibold">Kepercayaan Konsumen</div>
+                                                <div class="font-semibold text-sm sm:text-base">Kepercayaan Konsumen</div>
                                                 <div class="text-sm text-gray-600">Meningkatkan kemungkinan pembelian
                                                     ulang dan rekomendasi.</div>
                                             </div>
@@ -1463,9 +1492,9 @@
 
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-primary text-white font-bold">⚖</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-primary text-white font-bold text-sm sm:text-base">⚖</span>
                                             <div>
-                                                <div class="font-semibold">Kepatuhan Produk</div>
+                                                <div class="font-semibold text-sm sm:text-base">Kepatuhan Produk</div>
                                                 <div class="text-sm text-gray-600">Bukti formal bahwa produk memenuhi
                                                     standar yang diakui.</div>
                                             </div>
@@ -1473,9 +1502,9 @@
 
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#25D366] text-white font-bold">★</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#25D366] text-white font-bold text-sm sm:text-base">★</span>
                                             <div>
-                                                <div class="font-semibold">Peluang Distribusi</div>
+                                                <div class="font-semibold text-sm sm:text-base">Peluang Distribusi</div>
                                                 <div class="text-sm text-gray-600">Lebih mudah masuk ke toko,
                                                     marketplace, dan segmen ekspor tertentu.</div>
                                             </div>
@@ -1486,10 +1515,10 @@
                                 </div>
 
                                 <!-- Right: quick card -->
-                                <div class="bg-white rounded-xl shadow p-6">
+                                <div class="bg-white rounded-xl shadow p-4 sm:p-6">
                                     <div class="mb-3">
                                         <img src="img/placeholder-halal.jpg" alt="Ilustrasi Halal"
-                                            class="w-full rounded-md object-cover h-44">
+                                            class="w-full rounded-md object-cover h-36 sm:h-44">
                                     </div>
                                     <div class="text-sm text-gray-600 mb-3">Contoh Kategori</div>
                                     <div class="flex flex-col gap-2">
@@ -1516,17 +1545,17 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
                                 <!-- Left: content -->
                                 <div>
-                                    <h4 class="text-2xl font-bold text-primary mb-3">Untuk Produk Makanan & Olahan
+                                    <h4 class="text-xl sm:text-2xl font-bold text-primary mb-3">Untuk Produk Makanan & Olahan
                                         Rumah Tangga</h4>
-                                    <p class="text-gray-700 mb-4">Izin PIRT menegaskan bahwa produk Anda aman
+                                    <p class="text-gray-700 mb-4 text-sm sm:text-base">Izin PIRT menegaskan bahwa produk Anda aman
                                         dikonsumsi, diproduksi secara higienis, dan layak dipasarkan secara luas.</p>
 
                                     <ul class="space-y-3 mb-6">
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F3B433] text-white font-bold">✓</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#F3B433] text-white font-bold text-sm sm:text-base">✓</span>
                                             <div>
-                                                <div class="font-semibold">Keamanan Pangan</div>
+                                                <div class="font-semibold text-sm sm:text-base">Keamanan Pangan</div>
                                                 <div class="text-sm text-gray-600">Standar higienis dan proses produksi
                                                     yang diawasi.</div>
                                             </div>
@@ -1534,9 +1563,9 @@
 
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-primary text-white font-bold">🔬</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-primary text-white font-bold text-sm sm:text-base">🔬</span>
                                             <div>
-                                                <div class="font-semibold">Kelayakan Edar</div>
+                                                <div class="font-semibold text-sm sm:text-base">Kelayakan Edar</div>
                                                 <div class="text-sm text-gray-600">Mempermudah pemasaran ke retail &
                                                     pasar modern.</div>
                                             </div>
@@ -1544,9 +1573,9 @@
 
                                         <li class="flex items-start gap-3">
                                             <span
-                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#25D366] text-white font-bold">★</span>
+                                                class="mt-1 inline-flex items-center justify-center w-8 h-8 sm:w-9 sm:h-9 rounded-lg bg-[#25D366] text-white font-bold text-sm sm:text-base">★</span>
                                             <div>
-                                                <div class="font-semibold">Perlindungan Konsumen</div>
+                                                <div class="font-semibold text-sm sm:text-base">Perlindungan Konsumen</div>
                                                 <div class="text-sm text-gray-600">Memberi rasa aman bagi pembeli
                                                     terkait kebersihan dan keamanan.</div>
                                             </div>
@@ -1555,10 +1584,10 @@
                                 </div>
 
                                 <!-- Right: quick card -->
-                                <div class="bg-white rounded-xl shadow p-6">
+                                <div class="bg-white rounded-xl shadow p-4 sm:p-6">
                                     <div class="mb-3">
                                         <img src="img/placeholder-pirt.jpg" alt="Ilustrasi PIRT"
-                                            class="w-full rounded-md object-cover h-44">
+                                            class="w-full rounded-md object-cover h-36 sm:h-44">
                                     </div>
                                     <div class="text-sm text-gray-600 mb-3">Contoh Kategori</div>
                                     <div class="flex flex-col gap-2">
@@ -1585,33 +1614,33 @@
             </div>
 
             <!-- 2) Kewajiban Sertifikasi (placed after benefits) -->
-            <div class="bg-[#F7FBFF] rounded-2xl p-6 md:p-10 mb-10 border border-[#E6F0FA]">
-                <div class="flex items-start gap-6">
+            <div class="bg-[#F7FBFF] rounded-2xl p-4 sm:p-6 md:p-10 mb-10 border border-[#E6F0FA]">
+                <div class="flex flex-col sm:flex-row items-start gap-6">
                     <div class="flex-shrink-0">
                         <div
-                            class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            class="w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl sm:text-2xl">
                             !</div>
                     </div>
                     <div>
-                        <h4 class="text-xl font-bold text-primary mb-2">Kewajiban & Hal yang Perlu Disiapkan</h4>
-                        <p class="text-gray-700 mb-4">Setelah memahami manfaat, berikut beberapa kewajiban dan hal yang
+                        <h4 class="text-lg sm:text-xl font-bold text-primary mb-2">Kewajiban & Hal yang Perlu Disiapkan</h4>
+                        <p class="text-gray-700 mb-4 text-sm sm:text-base">Setelah memahami manfaat, berikut beberapa kewajiban dan hal yang
                             perlu dipenuhi agar proses sertifikasi berjalan lancar.</p>
 
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                             <div class="bg-white rounded-lg p-4 shadow">
-                                <div class="font-semibold text-primary mb-2">Standar Produksi</div>
+                                <div class="font-semibold text-primary mb-2 text-sm sm:text-base">Standar Produksi</div>
                                 <div class="text-sm text-gray-600">Kebersihan ruang produksi, alur kerja, dan praktik
                                     higienis.</div>
                             </div>
 
                             <div class="bg-white rounded-lg p-4 shadow">
-                                <div class="font-semibold text-primary mb-2">Label & Kemasan</div>
+                                <div class="font-semibold text-primary mb-2 text-sm sm:text-base">Label & Kemasan</div>
                                 <div class="text-sm text-gray-600">Informasi produk, komposisi, tanggal kadaluarsa, dan
                                     informasi allergen.</div>
                             </div>
 
                             <div class="bg-white rounded-lg p-4 shadow">
-                                <div class="font-semibold text-primary mb-2">Dokumen & Administrasi</div>
+                                <div class="font-semibold text-primary mb-2 text-sm sm:text-base">Dokumen & Administrasi</div>
                                 <div class="text-sm text-gray-600">Identitas usaha, daftar bahan baku, foto proses
                                     produksi, dan lain-lain.</div>
                             </div>
@@ -1630,14 +1659,14 @@
 
 
     <section class="py-12 bg-gray-50">
-        <div class="max-w-5xl mx-auto px-6">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
             <div class="mb-6">
                 <span
                     class="inline-flex items-center gap-2 rounded-full bg-accent text-black text-sm font-semibold px-4 py-1">
                     📝 Persyaratan Pendaftaran Halal dan PIRT
                 </span>
 
-                <h2 class="mt-3 text-3xl font-bold leading-tight sm:text-4xl text-gray-900">
+                <h2 class="mt-3 text-2xl sm:text-3xl font-bold leading-tight sm:text-4xl text-gray-900">
                     <span class="underline decoration-accent underline-offset-4">
                         Siap Mendaftarkan Produk Anda?
                     </span>
@@ -1647,15 +1676,15 @@
                 </h2>
 
 
-                <p class="mt-3 text-slate-600 max-w-2xl">Lengkapi dokumen berikut untuk proses pendaftaran Sertifikat
+                <p class="mt-3 text-slate-600 max-w-2xl text-sm sm:text-base">Lengkapi dokumen berikut untuk proses pendaftaran Sertifikat
                     Halal dan PIRT</p>
             </div>
 
             <!-- Tab Navigation with Enhanced UI -->
             <div class="mb-8">
-                <div class="bg-white rounded-lg shadow-sm p-1 inline-flex">
+                <div class="bg-white rounded-lg shadow-sm p-1 inline-flex w-full sm:w-auto">
                     <button onclick="showTab('halal')" id="halal-tab"
-                        class="tab-button flex items-center gap-2 px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                        class="tab-button flex items-center gap-2 px-4 sm:px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50 w-1/2 sm:w-auto justify-center">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
@@ -1663,7 +1692,7 @@
                         Persyaratan Halal
                     </button>
                     <button onclick="showTab('pirt')" id="pirt-tab"
-                        class="tab-button flex items-center gap-2 px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                        class="tab-button flex items-center gap-2 px-4 sm:px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50 w-1/2 sm:w-auto justify-center">
                         <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
@@ -1677,7 +1706,7 @@
             <!-- Halal Requirements Tab -->
             <div id="halal-content" class="tab-content">
                 <div
-                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
+                    class="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
                     <div class="mb-6">
                         <div class="flex items-center gap-3 mb-3">
                             <div class="p-2 bg-green-100 rounded-lg">
@@ -1687,7 +1716,7 @@
                                         d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran Halal</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran Halal</h3>
                         </div>
                         <p class="mt-1 text-sm text-slate-600">Pastikan Anda memiliki data-data berikut untuk proses
                             pendaftaran Sertifikat Halal.</p>
@@ -1706,7 +1735,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Nama Pemohon</p>
+                                <p class="font-semibold text-gray-800 text-sm">Nama Pemohon</p>
                                 <p class="text-sm text-slate-600">Pribadi / Badan Usaha</p>
                             </div>
                         </div>
@@ -1722,7 +1751,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Bidang Usaha</p>
+                                <p class="font-semibold text-gray-800 text-sm">Bidang Usaha</p>
                                 <p class="text-sm text-slate-600">Deskripsi singkat usaha</p>
                             </div>
                         </div>
@@ -1738,7 +1767,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Alamat Lengkap</p>
+                                <p class="font-semibold text-gray-800 text-sm">Alamat Lengkap</p>
                                 <p class="text-sm text-slate-600">Kota, Kecamatan, Kelurahan</p>
                             </div>
                         </div>
@@ -1754,7 +1783,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Dokumen Identitas</p>
+                                <p class="font-semibold text-gray-800 text-sm">Dokumen Identitas</p>
                                 <p class="text-sm text-slate-600">KTP, NPWP, dan NIB</p>
                             </div>
                         </div>
@@ -1770,7 +1799,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Informasi Kontak</p>
+                                <p class="font-semibold text-gray-800 text-sm">Informasi Kontak</p>
                                 <p class="text-sm text-slate-600">Nomor Telepon dan Email</p>
                             </div>
                         </div>
@@ -1786,7 +1815,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Foto Produk</p>
+                                <p class="font-semibold text-gray-800 text-sm">Foto Produk</p>
                                 <p class="text-sm text-slate-600">Format JPG/PNG</p>
                             </div>
                         </div>
@@ -1802,7 +1831,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Komposisi</p>
+                                <p class="font-semibold text-gray-800 text-sm">Komposisi</p>
                                 <p class="text-sm text-slate-600">Daftar semua bahan</p>
                             </div>
                         </div>
@@ -1818,7 +1847,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Berat Netto</p>
+                                <p class="font-semibold text-gray-800 text-sm">Berat Netto</p>
                                 <p class="text-sm text-slate-600">Berat bersih produk</p>
                             </div>
                         </div>
@@ -1834,7 +1863,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Daftar Bahan Baku</p>
+                                <p class="font-semibold text-gray-800 text-sm">Daftar Bahan Baku</p>
                                 <p class="text-sm text-slate-600">Beserta merek</p>
                             </div>
                         </div>
@@ -1850,7 +1879,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Cara Pembuatan</p>
+                                <p class="font-semibold text-gray-800 text-sm">Cara Pembuatan</p>
                                 <p class="text-sm text-slate-600">Proses produksi</p>
                             </div>
                         </div>
@@ -1858,7 +1887,7 @@
                 </div>
 
                 <div
-                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
+                    class="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
                     <div class="mb-6">
                         <div class="flex items-center gap-3 mb-3">
                             <div class="p-2 bg-blue-100 rounded-lg">
@@ -1869,7 +1898,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
                         </div>
                         <p class="mt-1 text-sm text-slate-600">Setelah semua proses selesai, berikut dokumen yang akan
                             Anda terima.</p>
@@ -1885,7 +1914,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            <p>Sertifikat Halal <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
+                            <p class="text-sm sm:text-base">Sertifikat Halal <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
                                     30-60 hari)</span></p>
                         </li>
                         <li
@@ -1898,7 +1927,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            <p>Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
+                            <p class="text-sm sm:text-base">Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
                         </li>
                     </ul>
                 </div>
@@ -1907,7 +1936,7 @@
             <!-- PIRT Requirements Tab -->
             <div id="pirt-content" class="tab-content hidden">
                 <div
-                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
+                    class="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
                     <div class="mb-6">
                         <div class="flex items-center gap-3 mb-3">
                             <div class="p-2 bg-blue-100 rounded-lg">
@@ -1918,7 +1947,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran PIRT</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran PIRT</h3>
                         </div>
                         <p class="mt-1 text-sm text-slate-600">Pastikan Anda memiliki data-data berikut untuk proses
                             pendaftaran PIRT.</p>
@@ -1937,7 +1966,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Nama Pemohon</p>
+                                <p class="font-semibold text-gray-800 text-sm">Nama Pemohon</p>
                                 <p class="text-sm text-slate-600">Pribadi / Badan Usaha</p>
                             </div>
                         </div>
@@ -1953,7 +1982,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Bidang Usaha</p>
+                                <p class="font-semibold text-gray-800 text-sm">Bidang Usaha</p>
                                 <p class="text-sm text-slate-600">Deskripsi singkat usaha</p>
                             </div>
                         </div>
@@ -1969,7 +1998,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Alamat Lengkap</p>
+                                <p class="font-semibold text-gray-800 text-sm">Alamat Lengkap</p>
                                 <p class="text-sm text-slate-600">Kota, Kecamatan, Kelurahan</p>
                             </div>
                         </div>
@@ -1985,7 +2014,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Dokumen Identitas</p>
+                                <p class="font-semibold text-gray-800 text-sm">Dokumen Identitas</p>
                                 <p class="text-sm text-slate-600">KTP, NPWP, dan NIB</p>
                             </div>
                         </div>
@@ -2001,7 +2030,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Informasi Kontak</p>
+                                <p class="font-semibold text-gray-800 text-sm">Informasi Kontak</p>
                                 <p class="text-sm text-slate-600">Nomor Telepon dan Email</p>
                             </div>
                         </div>
@@ -2017,7 +2046,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Foto Produk</p>
+                                <p class="font-semibold text-gray-800 text-sm">Foto Produk</p>
                                 <p class="text-sm text-slate-600">Dengan kemasan terlihat jelas</p>
                             </div>
                         </div>
@@ -2033,7 +2062,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Jenis Kemasan</p>
+                                <p class="font-semibold text-gray-800 text-sm">Jenis Kemasan</p>
                                 <p class="text-sm text-slate-600">Plastik, toples, dll</p>
                             </div>
                         </div>
@@ -2049,7 +2078,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Proses Produksi</p>
+                                <p class="font-semibold text-gray-800 text-sm">Proses Produksi</p>
                                 <p class="text-sm text-slate-600">Dipanggang, digoreng, dll</p>
                             </div>
                         </div>
@@ -2065,7 +2094,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Masa Kadaluarsa</p>
+                                <p class="font-semibold text-gray-800 text-sm">Masa Kadaluarsa</p>
                                 <p class="text-sm text-slate-600">1 Minggu, 1 Bulan, dll</p>
                             </div>
                         </div>
@@ -2081,7 +2110,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Isi Bersih</p>
+                                <p class="font-semibold text-gray-800 text-sm">Isi Bersih</p>
                                 <p class="text-sm text-slate-600">450 gram, dll</p>
                             </div>
                         </div>
@@ -2097,7 +2126,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Komposisi</p>
+                                <p class="font-semibold text-gray-800 text-sm">Komposisi</p>
                                 <p class="text-sm text-slate-600">Daftar semua bahan</p>
                             </div>
                         </div>
@@ -2113,7 +2142,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">NIB Pribadi</p>
+                                <p class="font-semibold text-gray-800 text-sm">NIB Pribadi</p>
                                 <p class="text-sm text-slate-600">Jika ada, lampirkan akun OSS</p>
                             </div>
                         </div>
@@ -2129,7 +2158,7 @@
                                 </svg>
                             </span>
                             <div>
-                                <p class="font-semibold text-gray-800">Tanda Tangan</p>
+                                <p class="font-semibold text-gray-800 text-sm">Tanda Tangan</p>
                                 <p class="text-sm text-slate-600">Di atas kertas putih</p>
                             </div>
                         </div>
@@ -2137,7 +2166,7 @@
                 </div>
 
                 <div
-                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
+                    class="rounded-2xl bg-white p-4 sm:p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
                     <div class="mb-6">
                         <div class="flex items-center gap-3 mb-3">
                             <div class="p-2 bg-blue-100 rounded-lg">
@@ -2148,7 +2177,7 @@
                                     </path>
                                 </svg>
                             </div>
-                            <h3 class="text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
+                            <h3 class="text-lg sm:text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
                         </div>
                         <p class="mt-1 text-sm text-slate-600">Setelah semua proses selesai, berikut dokumen yang akan
                             Anda terima.</p>
@@ -2164,7 +2193,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            <p>Sertifikat PIRT <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
+                            <p class="text-sm sm:text-base">Sertifikat PIRT <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
                                     14-30 hari)</span></p>
                         </li>
                         <li
@@ -2177,7 +2206,7 @@
                                         clip-rule="evenodd" />
                                 </svg>
                             </span>
-                            <p>Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
+                            <p class="text-sm sm:text-base">Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
                         </li>
                     </ul>
                 </div>
@@ -2185,7 +2214,7 @@
 
             <div class="mt-6">
                 <div
-                    class="flex flex-col gap-4 rounded-xl bg-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between">
+                    class="flex flex-col gap-4 rounded-xl bg-slate-100 p-4 sm:p-6 sm:flex-row sm:items-center sm:justify-between">
                     <div>
                         <p class="text-base text-gray-800 font-semibold">Dokumen belum lengkap?</p>
                         <p class="text-sm text-slate-600 mt-1">Tim kami siap membantu siapkan dan cek kelayakan dokumen
@@ -2193,7 +2222,7 @@
                     </div>
                     <a href="https://api.whatsapp.com/send?phone=6282151519925&text=Halo%20admin%20saya%20dari%20website,%20ingin%20konsultasi%20terkait%20pendaftaran%20halal%20dan%20pirt"
                         target="_blank" rel="noopener noreferrer"
-                        class="inline-flex items-center justify-center rounded-lg border border-[#25D366] bg-white px-6 py-3 font-semibold text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">
+                        class="inline-flex items-center justify-center rounded-lg border border-[#25D366] bg-white px-4 sm:px-6 py-3 font-semibold text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg text-sm sm:text-base">
                         <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
                             <path
                                 d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
@@ -2206,6 +2235,7 @@
     </section>
 
 
+    
     <!-- CTA Section dengan Background Gambar -->
     <section class="cta-section">
         <div class="container">
@@ -2219,11 +2249,11 @@
                 <div class="trust-signals">
                     <div class="trust-item">
                         <span class="check-icon">✓</span>
-                        <span>Dipercaya 100+ brand</span>
+                        <span>Dipercaya 200+ brand</span>
                     </div>
                     <div class="trust-item">
                         <span class="check-icon">✓</span>
-                        <span>Proses resmi DJKI</span>
+                        <span>Proses resmi </span>
                     </div>
                     <div class="trust-item">
                         <span class="check-icon">✓</span>
