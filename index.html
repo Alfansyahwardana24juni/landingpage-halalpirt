@@ -1,0 +1,2835 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Akses Legal Indonesia — Sertifikasi Halal, PIRT & BPOM</title>
+    <meta name="description"
+        content="Layanan profesional untuk pengurusan Sertifikasi Halal, PIRT, dan BPOM. Proses cepat, aman, dan terdaftar resmi. Konsultasi gratis!" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { inter: ['Inter', 'sans-serif'] },
+                    colors: {
+                        primary: '#1C4E80',
+                        accent: '#F3B433',
+                        whatsapp: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .animated-bg {
+            background: linear-gradient(-45deg, #1C4E80, #0a2f5a, #2968a3, #1e4d80);
+            background-size: 400% 400%;
+            animation: gradientShift 15s ease infinite;
+            position: relative;
+            overflow: hidden;
+        }
+
+        @keyframes gradientShift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Enhanced Particles */
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.15;
+            background: #fff;
+            animation: float 20s linear infinite;
+        }
+
+        .particle:nth-child(1) {
+            width: 60px;
+            height: 60px;
+            top: 10%;
+            left: 20%;
+            animation-duration: 25s;
+        }
+
+        .particle:nth-child(2) {
+            width: 100px;
+            height: 100px;
+            bottom: 15%;
+            right: 10%;
+            animation-duration: 30s;
+        }
+
+        .particle:nth-child(3) {
+            width: 40px;
+            height: 40px;
+            top: 60%;
+            left: 10%;
+            animation-duration: 20s;
+        }
+
+        .particle:nth-child(4) {
+            width: 80px;
+            height: 80px;
+            top: 30%;
+            right: 15%;
+            animation-duration: 35s;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+
+            50% {
+                transform: translateY(-30px) rotate(180deg);
+            }
+
+            100% {
+                transform: translateY(0) rotate(360deg);
+            }
+        }
+
+        /* Animated shapes */
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            z-index: 1;
+        }
+
+        .shape-1 {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: linear-gradient(45deg, #ffffff, #FDD835);
+            top: -150px;
+            right: -100px;
+            animation: shapeFloat 20s ease-in-out infinite;
+        }
+
+        .shape-2 {
+            width: 200px;
+            height: 200px;
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+            background: linear-gradient(45deg, #ffffff, #2968a3);
+            bottom: -100px;
+            left: -50px;
+            animation: shapeFloat 25s ease-in-out infinite reverse;
+        }
+
+        @keyframes shapeFloat {
+
+            0%,
+            100% {
+                transform: translate(0, 0) rotate(0deg);
+            }
+
+            33% {
+                transform: translate(30px, -30px) rotate(120deg);
+            }
+
+            66% {
+                transform: translate(-20px, 20px) rotate(240deg);
+            }
+        }
+
+        /* Wave animation */
+        .wave {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 320'%3E%3Cpath fill='%23ffffff' fill-opacity='0.1' d='M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,133.3C960,128,1056,96,1152,90.7C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z'%3E%3C/path%3E%3C/svg%3E");
+            background-size: cover;
+            animation: wave 10s linear infinite;
+        }
+
+        @keyframes wave {
+            0% {
+                background-position-x: 0;
+            }
+
+            100% {
+                background-position-x: 1440px;
+            }
+        }
+
+        /* Enhanced hook styles */
+        .hook-badge {
+            background: linear-gradient(90deg, rgba(253, 216, 53, 0.3) 0%, rgba(253, 216, 53, 0.1) 100%);
+            backdrop-filter: blur(5px);
+            border: 1px solid rgba(253, 216, 53, 0.4);
+            box-shadow: 0 4px 15px rgba(253, 216, 53, 0.2);
+        }
+
+        .highlight-text {
+            text-shadow: 0 0 20px rgba(253, 216, 53, 0.5);
+        }
+
+        /* Glow effect for buttons */
+        .glow-button {
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .glow-button:hover {
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.5);
+            transform: translateY(-2px);
+        }
+
+        /* Advanced Hero Image Container */
+        .hero-3d-container {
+            perspective: 1000px;
+            transform-style: preserve-3d;
+        }
+
+        .hero-card {
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+            animation: floatCard 6s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+
+            0%,
+            100% {
+                transform: translateY(0) rotateX(0) rotateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px) rotateX(2deg) rotateY(2deg);
+            }
+        }
+
+        .hero-image-wrapper {
+            position: relative;
+            overflow: hidden;
+            border-radius: 1.5rem;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+            aspect-ratio: 16/9;
+        }
+
+        .hero-image-wrapper::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg,
+                    rgba(28, 78, 128, 0.1) 0%,
+                    rgba(28, 78, 128, 0.3) 50%,
+                    rgba(253, 216, 53, 0.2) 100%);
+            z-index: 2;
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .hero-image-wrapper:hover::before {
+            opacity: 1;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.8s cubic-bezier(0.23, 1, 0.32, 1);
+        }
+
+        .hero-image-wrapper:hover .hero-image {
+            transform: scale(1.1);
+        }
+
+        /* Shimmer effect */
+        .shimmer {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 50%;
+            height: 100%;
+            background: linear-gradient(90deg,
+                    transparent 0%,
+                    rgba(255, 255, 255, 0.3) 50%,
+                    transparent 100%);
+            animation: shimmer 3s infinite;
+            z-index: 4;
+        }
+
+        @keyframes shimmer {
+            0% {
+                left: -100%;
+            }
+
+            20%,
+            100% {
+                left: 150%;
+            }
+        }
+
+        /* Bottom Position Stats Rectangle - Top of Bottom Area Dekstop*/
+        .stats-overlay {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            padding: 0 0px;
+            width: 80%;
+        }
+
+        .stats-rectangle {
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(100px);
+            border-radius: 12px;
+            padding: 6px 1px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .stats-rectangle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1C4E80, #2968a3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .stats-rectangle:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+            background: rgba(255, 255, 255, 1);
+        }
+
+        .stats-content {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .stat-item {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-icon {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1C4E80, #2968a3);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(28, 78, 128, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item:hover .stat-icon {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(28, 78, 128, 0.35);
+        }
+
+        .stat-icon svg {
+            width: 16px;
+            height: 16px;
+            color: white;
+        }
+
+        .stat-number {
+            color: #1C4E80;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            line-height: 1.2;
+            transition: all 0.3s ease;
+        }
+
+        .stat-label {
+            color: #475569;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        /* end dekstop */
+
+        /* mobile */
+        .stats-overlay-mobile {
+            position: absolute;
+            bottom: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            padding: 0 0px;
+            width: 80%;
+        }
+
+        .stats-rectangle-mobile {
+            border-radius: 12px;
+            padding: 6px 1px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .stats-rectangle-mobile::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #1C4E80, #2968a3);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .stats-rectangle-mobile:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        .stats-content-mobile {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            gap: 24px;
+        }
+
+        .stat-item-mobile {
+            text-align: center;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .stat-icon-mobile {
+            width: 28px;
+            height: 28px;
+            margin-bottom: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, #1C4E80, #2968a3);
+            border-radius: 50%;
+            box-shadow: 0 4px 12px rgba(28, 78, 128, 0.25);
+            transition: all 0.3s ease;
+        }
+
+        .stat-item-mobile:hover .stat-icon-mobile {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(28, 78, 128, 0.35);
+        }
+
+        .stat-icon-mobile svg {
+            width: 16px;
+            height: 16px;
+            color: white;
+        }
+
+        .stat-number-mobile {
+            color: #1C4E80;
+            font-size: 15px;
+            font-weight: 700;
+            margin-bottom: 2px;
+            line-height: 1.2;
+            transition: all 0.3s ease;
+        }
+
+        .stat-label-mobile {
+            color: #475569;
+            font-size: 9px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: all 0.3s ease;
+        }
+
+        /* end mobile */
+        /* Interactive pulse effect */
+        .pulse-dot {
+            position: absolute;
+            width: 12px;
+            height: 12px;
+            background: #25D366;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        /* Enhanced button styles */
+        .premium-button {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .premium-button::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+
+        .premium-button:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+
+        .cta-section {
+            background: linear-gradient(135deg, #142a5c 0%, #0a1c3a 100%);
+            position: relative;
+            padding: 80px 0;
+            overflow: hidden;
+        }
+
+        .cta-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('img/cta-bg.jpg') center/cover no-repeat;
+            opacity: 0.2;
+            z-index: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .cta-content {
+            text-align: center;
+            color: white;
+        }
+
+        .cta-title {
+            font-size: 42px;
+            font-weight: 800;
+            margin-bottom: 24px;
+            line-height: 1.2;
+        }
+
+        .cta-description {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .trust-signals {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .check-icon {
+            color: #4ade80;
+            margin-right: 8px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background-color: #fbbf24;
+            color: #142a5c;
+            font-size: 18px;
+            font-weight: 700;
+            padding: 16px 32px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #f59e0b;
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .cta-section {
+                padding: 60px 0;
+            }
+
+            .cta-title {
+                font-size: 32px;
+            }
+
+            .cta-description {
+                font-size: 16px;
+            }
+
+            .trust-signals {
+                flex-direction: column;
+                gap: 15px;
+                align-items: center;
+            }
+
+            .trust-item {
+                justify-content: center;
+            }
+        }
+
+        .law-highlight {
+            background: rgba(255, 199, 0, 0.1);
+            border-left: 4px solid #ffc700;
+            padding: 16px;
+            border-radius: 0 8px 8px 0;
+        }
+
+        .requirement-item {
+            background: white;
+            border-radius: 8px;
+            padding: 16px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .requirement-item:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Glow text effect */
+        .glow-text {
+            animation: textGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes textGlow {
+            from {
+                text-shadow: 0 0 10px rgba(253, 216, 53, 0.5);
+            }
+
+            to {
+                text-shadow: 0 0 20px rgba(253, 216, 53, 0.8), 0 0 30px rgba(253, 216, 53, 0.6);
+            }
+        }
+
+        @keyframes pulse-glow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 20px rgba(220, 38, 38, 0.4),
+                    0 0 40px rgba(220, 38, 38, 0.2),
+                    0 0 60px rgba(220, 38, 38, 0.1);
+            }
+
+            50% {
+                box-shadow: 0 0 30px rgba(220, 38, 38, 0.6),
+                    0 0 60px rgba(220, 38, 38, 0.4),
+                    0 0 90px rgba(220, 38, 38, 0.2);
+            }
+        }
+
+        @keyframes shake {
+
+            0%,
+            100% {
+                transform: translateX(0);
+            }
+
+            10%,
+            30%,
+            50%,
+            70%,
+            90% {
+                transform: translateX(-3px);
+            }
+
+            20%,
+            40%,
+            60%,
+            80% {
+                transform: translateX(3px);
+            }
+        }
+
+        @keyframes bounce-scale {
+
+            0%,
+            100% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.1);
+            }
+        }
+
+        @keyframes border-pulse {
+
+            0%,
+            100% {
+                border-color: rgb(220, 38, 38);
+            }
+
+            50% {
+                border-color: rgb(239, 68, 68);
+            }
+        }
+
+        .alert-container {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+
+        .alert-icon {
+            animation: bounce-scale 1.5s ease-in-out infinite;
+        }
+
+        .alert-border {
+            animation: border-pulse 1.5s ease-in-out infinite;
+        }
+
+        .alert-shake {
+            animation: shake 0.5s ease-in-out;
+        }
+
+        @keyframes gradient-shift {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
+
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #fee2e2 0%, #fecaca 50%, #fee2e2 100%);
+            background-size: 200% 200%;
+            animation: gradient-shift 3s ease infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Hero Section -->
+    <section class="relative animated-bg text-white overflow-hidden min-h-[60vh] py-8 sm:py-12">
+        <!-- Animated Shapes -->
+        <div class="shape shape-1"></div>
+        <div class="shape shape-2"></div>
+
+        <!-- Particles -->
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+        <span class="particle"></span>
+
+        <!-- Wave -->
+        <div class="wave"></div>
+
+        <div class="relative z-10 max-w-7xl mx-auto">
+            <!-- Logo Header (All Devices) -->
+            <div class="px-6 pt-4 pb-2 lg:pb-0">
+                <img src="img/Logo Ali putih Panjang.png" alt="Akses Legal Indonesia"
+                    class="h-8 sm:h-10 w-auto lg:absolute lg:top-6 lg:left-8 lg:z-20">
+            </div>
+
+            <!-- MOBILE LAYOUT (< 1024px): Gambar Atas, Text Bawah -->
+            <div class="lg:hidden">
+                <!-- Gambar Hero -->
+                <div class="px-6 pt-4 pb-6 fade-in">
+                    <div class="hero-3d-container">
+                        <div class="hero-card">
+                            <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-2 border border-white/20 shadow-2xl">
+                                <div class="hero-image-wrapper relative">
+                                    <img src="img/hero.jpg"
+                                        alt="Tim Akses Legal Indonesia siap membantu proses sertifikasi bisnis Anda"
+                                        class="hero-image object-[center_45%]">
+                                    <div class="shimmer"></div>
+
+                                    <!-- Bottom Position Stats Rectangle - Top of Bottom Area -->
+                                    <div class="stats-overlay-mobile">
+                                        <div class="stats-rectangle-mobile">
+                                            <div class="stats-content-mobile">
+                                                <div class="stat-item-mobile">
+                                                    <div class="stat-icon-mobile">
+                                                        <svg fill="currentColor" viewBox="0 0 20 20">
+                                                            <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                                            <path fill-rule="evenodd"
+                                                                d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="stat-number-mobile">200+</div>
+                                                    <div class="stat-label-mobile">PRODUK</div>
+                                                </div>
+                                                <div class="stat-item-mobile">
+                                                    <div class="stat-icon-mobile">
+                                                        <svg fill="currentColor" viewBox="0 0 20 20">
+                                                            <path fill-rule="evenodd"
+                                                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                                clip-rule="evenodd" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="stat-number-mobile">5-10</div>
+                                                    <div class="stat-label-mobile">HARI PROSES</div>
+                                                </div>
+                                                <div class="stat-item-mobile">
+                                                    <div class="stat-icon-mobile">
+                                                        <svg fill="currentColor" viewBox="0 0 20 20">
+                                                            <path
+                                                                d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                        </svg>
+                                                    </div>
+                                                    <div class="stat-number-mobile">5.0</div>
+                                                    <div class="stat-label-mobile">RATING</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Text Content -->
+                <div class="px-6 pb-8 text-white text-center fade-in">
+                    <div class="hook-badge inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6 text-sm">
+                        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                        <span>Ratusan Produk UMKM Tersertifikasi</span>
+                    </div>
+
+                    <h1 class="text-2xl sm:text-4xl font-extrabold leading-tight mb-6">
+                        Akses Legal Hadir Membantu Sertifikasi
+                        <span class="text-accent highlight-text glow-text">Halal</span> &
+                        <span class="text-accent highlight-text glow-text">PIRT</span>
+
+                    </h1>
+
+                    <p
+                        class="text-lg text-gray-200 mb-4 font-medium flex items-center justify-center md:justify-start gap-2">
+                        <svg class="w-6 h-6 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span>Proses Cepat, Aman, dan Terdaftar Resmi</span>
+                    </p>
+                    <p class="text-gray-300 mb-8 flex items-start justify-center md:justify-start gap-2">
+                        <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                        </svg>
+                        <span>Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
+                            MUI, dan Dinas Kesehatan</span>
+                    </p>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4 mb-6">
+                        <div
+                            class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-lg hover:bg-white/20 transition">
+                            <svg class="w-5 h-5 text-green-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="font-medium">Terdaftar Resmi</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-lg hover:bg-white/20 transition">
+                            <svg class="w-5 h-5 text-accent flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="font-medium">Proses Cepat</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2.5 rounded-lg hover:bg-white/20 transition">
+                            <svg class="w-5 h-5 text-blue-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                                <path fill-rule="evenodd"
+                                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span class="font-medium">Harga Terjangkau</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#konsultasi"
+                            class="premium-button glow-button px-20 py-3 bg-whatsapp hover:bg-green-500 rounded-lg font-semibold text-white transition inline-flex items-center gap-2 relative">
+                            <span class="pulse-dot" style="top: 10px; right: 10px;"></span>
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            <span>Konsultasi Gratis</span>
+                        </a>
+                        <a href="#harga"
+                            class="premium-button px-20 py-3 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg font-semibold text-white transition relative inline-flex items-center gap-2">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                                <path fill-rule="evenodd"
+                                    d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>Lihat Paket Harga</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DESKTOP LAYOUT (>= 1024px): Text Kiri, Gambar Kanan -->
+            <div class="hidden lg:grid lg:grid-cols-2 lg:gap-12 lg:items-center lg:px-8 lg:py-16">
+                <!-- Left Content -->
+                <div class="text-white space-y-6 fade-in">
+                    <!-- Social Proof Badge -->
+                    <div class="hook-badge inline-flex items-center gap-2 rounded-full px-4 py-2 mb-6 text-sm">
+                        <span class="w-2 h-2 bg-accent rounded-full animate-pulse"></span>
+                        <span>200+ Produk UMKM Tersertifikasi</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-2xl xl:text-4xl font-extrabold leading-tight">
+                        Akses Legal Hadir Membantu Sertifikasi
+                        <span class="text-accent highlight-text glow-text">Halal</span> &
+                        <span class="text-accent highlight-text glow-text">PIRT</span>
+                    </h1>
+
+                    <!-- Sub Headline -->
+                    <p class="text-xl xl:text-2xl text-blue-100 max-w-2xl mt-4">
+                        Proses Cepat, Aman, dan Terdaftar Resmi
+                    </p>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex flex-wrap gap-4 text-sm">
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span>Terdaftar Resmi</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-accent rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd"
+                                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span>Proses Cepat</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M8.433 7.418c.155-.103.346-.196.567-.267v1.698a2.305 2.305 0 01-.567-.267C8.07 8.34 8 8.114 8 8c0-.114.07-.34.433-.582zM11 12.849v-1.698c.22.071.412.164.567.267.364.243.433.468.433.582 0 .114-.07.34-.433.582a2.305 2.305 0 01-.567.267z" />
+                                    <path fill-rule="evenodd"
+                                        d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a1 1 0 10-2 0v.092a4.535 4.535 0 00-1.676.662C6.602 6.234 6 7.009 6 8c0 .99.602 1.765 1.324 2.246.48.32 1.054.545 1.676.662v1.941c-.391-.127-.68-.317-.843-.504a1 1 0 10-1.51 1.31c.562.649 1.413 1.076 2.353 1.253V15a1 1 0 102 0v-.092a4.535 4.535 0 001.676-.662C13.398 13.766 14 12.991 14 12c0-.99-.602-1.765-1.324-2.246A4.535 4.535 0 0011 9.092V7.151c.391.127.68.317.843.504a1 1 0 101.511-1.31c-.563-.649-1.413-1.076-2.354-1.253V5z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                            <span>Harga Terjangkau</span>
+                        </div>
+                    </div>
+
+                    <!-- Additional Description -->
+                    <p class="text-gray-300 flex items-start gap-2">
+                        <svg class="w-5 h-5 text-accent mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                            <path
+                                d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+                        </svg>
+                        <span>Kami bantu usaha Anda mendapatkan izin resmi langsung dari lembaga seperti BPOM, Halal
+                            MUI, dan Dinas Kesehatan</span>
+                    </p>
+
+                    <div class="flex flex-wrap justify-center md:justify-start gap-4">
+                        <a href="#konsultasi"
+                            class="premium-button glow-button px-6 py-3 bg-whatsapp hover:bg-green-500 rounded-lg font-semibold text-white transition inline-flex items-center gap-2 relative">
+                            <span class="pulse-dot" style="top: 10px; right: 10px;"></span>
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                                <path
+                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                            </svg>
+                            <span>Konsultasi Gratis</span>
+                        </a>
+                        <a href="#harga"
+                            class="premium-button px-6 py-3 bg-white/10 hover:bg-white/20 border border-white/30 rounded-lg font-semibold text-white transition relative inline-flex items-center gap-2">
+                            <svg class="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M4 4a2 2 0 00-2 2v1h16V6a2 2 0 00-2-2H4z" />
+                                <path fill-rule="evenodd"
+                                    d="M18 9H2v5a2 2 0 002 2h12a2 2 0 002-2V9zM4 13a1 1 0 011-1h1a1 1 0 110 2H5a1 1 0 01-1-1zm5-1a1 1 0 100 2h1a1 1 0 100-2H9z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                            <span>Lihat Paket Harga</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Visual -->
+                <div class="relative hero-3d-container">
+                    <div class="hero-card">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-3xl p-2 border border-white/20 shadow-2xl">
+                            <div class="hero-image-wrapper relative">
+                                <img src="img/hero.jpg"
+                                    alt="Tim Akses Legal Indonesia siap membantu proses sertifikasi bisnis Anda"
+                                    class="hero-image object-[center_45%]">
+                                <div class="shimmer"></div>
+
+                                <!-- Bottom Position Stats Rectangle - Top of Bottom Area -->
+                                <div class="stats-overlay">
+                                    <div class="stats-rectangle">
+                                        <div class="stats-content">
+                                            <div class="stat-item">
+                                                <div class="stat-icon">
+                                                    <svg fill="currentColor" viewBox="0 0 20 20">
+                                                        <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z" />
+                                                        <path fill-rule="evenodd"
+                                                            d="M4 5a2 2 0 012-2 3 3 0 003 3h2a3 3 0 003-3 2 2 0 012 2v11a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 4a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                                <div class="stat-number">200+</div>
+                                                <div class="stat-label">PRODUK</div>
+                                            </div>
+                                            <div class="stat-item">
+                                                <div class="stat-icon">
+                                                    <svg fill="currentColor" viewBox="0 0 20 20">
+                                                        <path fill-rule="evenodd"
+                                                            d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </div>
+                                                <div class="stat-number">5-10</div>
+                                                <div class="stat-label">HARI PROSES</div>
+                                            </div>
+                                            <div class="stat-item">
+                                                <div class="stat-icon">
+                                                    <svg fill="currentColor" viewBox="0 0 20 20">
+                                                        <path
+                                                            d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                                    </svg>
+                                                </div>
+                                                <div class="stat-number">5.0</div>
+                                                <div class="stat-label">RATING</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="max-w-7xl mx-auto fade-in mt-10" aria-labelledby="halal-certification-title">
+        <div class="container mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <header class="flex flex-col items-center justify-center">
+                <div class="relative inline-flex items-center mb-6">
+                    <div
+                        class="bg-red-700 rounded-full px-12 sm:px-16 md:px-20 py-3 flex items-center justify-center gap-4 shadow-xl w-fit">
+                        <h2 id="halal-certification-title"
+                            class="text-[#FFC700] text-xl sm:text-2xl md:text-3xl font-extrabold whitespace-nowrap animate-pulse">
+                            KEWAJIBAN SERTIFIKASI HALAL
+                        </h2>
+                    </div>
+                    <img src="img/warning.png" alt="Ikon Peringatan"
+                        class="absolute right-0 -mr-6 w-12 h-auto z-20 md:-mr-8 md:w-16">
+                </div>
+            </header>
+
+            <main class="flex flex-col items-center">
+                <div
+                    class="rounded-2xl bg-red-50 border border-red-200 p-6 flex flex-col md:flex-row items-start gap-4 mt-6 w-full max-w-5xl shadow-sm hover:shadow-md transition-shadow duration-300">
+                    <div class="flex-1">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-red-100 rounded-full p-2 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-red-600" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-red-700 mb-2">Berdasarkan Undang-Undang</h3>
+                                <p class="text-sm sm:text-base text-gray-700">
+                                    Undang-Undang Nomor 33 Tahun 2014 Pasal 4 tegas menyatakan bahwa seluruh produk yang
+                                    masuk, beredar dan diperdagangkan di wilayah Indonesia wajib bersertifikat halal,
+                                    dengan batasan dan ketentuan yang jelas.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex-1">
+                        <div class="flex items-start gap-3">
+                            <div class="bg-blue-100 rounded-full p-2 flex-shrink-0">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-blue-700 mb-2">Berlaku Untuk</h3>
+                                <p class="text-sm sm:text-base text-gray-700">
+                                    Ketentuan ini berlaku bagi seluruh pelaku usaha, termasuk UMKM, dengan tujuan
+                                    melindungi konsumen dan memastikan kejelasan status halal produk.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Warning moved to main -->
+                <div
+                    class="mt-8 bg-red-700 text-white text-center rounded-xl p-5 flex items-center gap-4 shadow-md hover:bg-red-800 transition-colors duration-300 w-full max-w-5xl">
+                    <span class="text-4xl soft-bounce" role="img" aria-label="Peringatan">🚨</span>
+                    <p class="font-semibold text-base sm:text-lg leading-snug">
+                        Pastikan produk Anda memenuhi kewajiban hukum ini untuk menghindari risiko sanksi.
+                    </p>
+                </div>
+            </main>
+        </div>
+    </section>
+    <!-- KEUNGGULAN LAYANAN -->
+    <section class="py-20 bg-[#F8FAFC]">
+        <div class="max-w-6xl mx-auto px-6">
+
+            <!-- Title -->
+            <div class="text-center mb-14">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-primary mb-3">
+                    Mengapa Harus Daftar Lewat Akses Legal?
+                </h2>
+                <p class="text-gray-600 max-w-xl mx-auto">
+                    Layanan cepat, pendampingan penuh, dan proses yang transparan tanpa ribet.
+                </p>
+            </div>
+
+            <!-- 3 Cards -->
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- Card 1 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-16 h-16 rounded-xl bg-primary/10 flex items-center justify-center mb-6">
+                        <span class="text-3xl">🔒</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                        Legalitas Aman & Terjamin
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Semua proses mengikuti regulasi resmi. Dokumen valid & dapat dipertanggungjawabkan.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-16 h-16 rounded-xl bg-[#F3B433]/20 flex items-center justify-center mb-6">
+                        <span class="text-3xl">👥</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                        Pendampingan Profesional
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Tim ahli membantu dari awal hingga sertifikat terbit. Anda tidak jalan sendiri.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-xl transition duration-200">
+                    <div class="w-16 h-16 rounded-xl bg-[#25D366]/20 flex items-center justify-center mb-6">
+                        <span class="text-3xl">⚡</span>
+                    </div>
+
+                    <h3 class="text-xl font-bold text-primary mb-3">
+                        Proses Cepat & Transparan
+                    </h3>
+
+                    <p class="text-gray-600 leading-relaxed">
+                        Update berkala sampai tuntas. Semua bisa dipantau tanpa harus bolak-balik kantor.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- CTA Akhir -->
+    <section id="konsultasi" class="relative overflow-hidden animated-bg text-white">
+
+        <!-- Animated Background Elements -->
+        <div class="particles">
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+            <span class="particle"></span>
+        </div>
+        <div class="geometric-shape shape-2"></div>
+
+        <!-- SLOGAN HALAL -->
+        <section class="py-20 mt-30 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                    <!-- IMAGE (Mobile: atas / Desktop: kanan) -->
+                    <div class="relative flex justify-center order-1 md:order-2">
+                        <img src="img/sertifikat halal.jpg" alt="Orang memegang sertifikat"
+                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[450px] object-cover object-[center_55%]">
+
+                        <!-- Badge -->
+                        <div class="absolute -bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
+                            bg-accent text-black rounded-xl p-4 shadow-lg">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+
+                                <div>
+                                    <div class="text-2xl font-bold">200+</div>
+                                    <div class="text-sm">Sertifikasi Berhasil</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 text-white">
+                            Pastikan Produk Anda
+                            <span class="text-accent">Halal</span> dan
+                            <span class="text-accent">Diakui Secara Resmi</span>
+                        </h2>
+
+                        <p class="text-lg opacity-90 mb-6 text-white">
+                            Tunjukkan komitmen usaha Anda dengan produk yang terjamin kehalalannya,
+                            meningkatkan kepercayaan pelanggan di setiap penjualan.
+                        </p>
+
+                        <div class="flex items-center gap-4 mb-8">
+
+                            <!-- Halal -->
+                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 
+                                12.91l-5-3.64 5.91-.99L12 2z" />
+                                </svg>
+                                <span class="text-accent font-bold text-xl">Halal</span>
+                            </div>
+
+                            <!-- Resmi -->
+                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 
+                                7l-3.5 3.5L7 10l5-5 5 5-1.5 1.5L12 8z" />
+                                </svg>
+                                <span class="text-accent font-bold text-xl">Resmi</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+        <div class="geometric-shape shape-2"></div>
+        <!-- SLOGAN PIRT -->
+        <section class="py-20 mt-10 text-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                    <!-- IMAGE (Desktop kiri / Mobile atas) -->
+                    <div class="relative flex justify-center order-1">
+                        <img src="img/sertifikat pirt.jpg" alt="Orang memegang sertifikat"
+                            class="rounded-2xl shadow-xl w-full max-w-sm md:max-w-full mx-auto h-[450px] object-cover object-[center_55%]">
+
+                        <!-- Badge -->
+                        <div class="absolute -bottom-6 right-1/2 md:right-6 translate-x-1/2 md:translate-x-0 
+                            bg-accent text-black rounded-xl p-4 shadow-lg">
+                            <div class="flex items-center gap-2">
+                                <svg class="w-8 h-8 text-black" fill="currentColor" viewBox="0 0 20 20">
+                                    <path
+                                        d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
+                                </svg>
+
+                                <div>
+                                    <div class="text-2xl font-bold">200+</div>
+                                    <div class="text-sm">Sertifikasi Berhasil</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TEXT -->
+                    <div class="order-2">
+                        <h2 class="text-3xl sm:text-4xl font-extrabold mb-6 text-white">
+                            Pastikan Produk Makanan Anda
+                            <span class="text-accent">Aman</span>,
+                            <span class="text-accent">Higienis</span> dan
+                            <span class="text-accent">Siap Edar.</span>
+                        </h2>
+
+                        <p class="text-lg opacity-90 mb-6">
+                            Dengan izin PIRT, usaha Anda mendapat kepastian keamanan pangan dan kepercayaan lebih dari
+                            pelanggan dalam setiap penjualan.
+                        </p>
+
+                        <div class="flex items-center gap-4 mb-8">
+
+                            <!-- Halal -->
+                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2l2.09 6.26L20 9.27l-5 3.64L16.18 20 12 16.9 7.82 20 9 
+                                12.91l-5-3.64 5.91-.99L12 2z" />
+                                </svg>
+                                <span class="text-accent font-bold text-xl">Halal</span>
+                            </div>
+
+                            <!-- Resmi -->
+                            <div class="bg-black/10 rounded-lg px-4 py-2 flex items-center gap-2">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                                    <path
+                                        d="M12 1l9 4v6c0 5.55-3.84 10.74-9 12-5.16-1.26-9-6.45-9-12V5l9-4zm0 7l-3.5 3.5L7 10l5-5 5 5-1.5 1.5L12 8z" />
+                                </svg>
+                                <span class="text-accent font-bold text-xl">Resmi</span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+    <!-- HALAL & PIRT: Tabs (Capsule Modern) + Kewajiban + Keunggulan + Alur Pendaftaran -->
+    <!-- Paste this block where you want these sections to appear. Requires Tailwind CSS. -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+            <!-- 1) Tab Capsule: Halal | PIRT -->
+            <div class="mb-8">
+                <div class="flex items-center justify-between gap-4 mb-6">
+                    <h3 class="text-2xl font-extrabold text-primary">Manfaat Sertifikasi</h3>
+                    <p class="text-sm text-gray-600">Pilih tab untuk melihat perbedaan & manfaat</p>
+                </div>
+
+                <div class="w-full">
+                    <!-- Capsule control -->
+                    <div class="inline-flex rounded-full bg-[#E9F2FA] p-1 shadow-sm" role="tablist"
+                        aria-label="Pilih sertifikasi">
+                        <button id="tab-halal" aria-controls="panel-halal" role="tab" aria-selected="true"
+                            class="relative px-5 md:px-6 py-2 rounded-full bg-white text-primary font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-[#F3B433]/40 transition"
+                            onclick="openPanel('halal')">
+                            Halal
+                        </button>
+
+                        <button id="tab-pirt" aria-controls="panel-pirt" role="tab" aria-selected="false"
+                            class="relative px-5 md:px-6 py-2 rounded-full text-primary font-semibold bg-transparent hover:bg-white/60 transition"
+                            onclick="openPanel('pirt')">
+                            PIRT
+                        </button>
+                    </div>
+
+                    <!-- Panels -->
+                    <div class="mt-6">
+                        <!-- Halal Panel -->
+                        <div id="panel-halal" role="tabpanel" aria-labelledby="tab-halal">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                                <!-- Left: content -->
+                                <div>
+                                    <h4 class="text-2xl font-bold text-primary mb-3">Untuk Produk Konsumen & Makanan
+                                        Olahan</h4>
+                                    <p class="text-gray-700 mb-4">Sertifikat halal membantu membangun kepercayaan
+                                        pelanggan, membuka akses ke segmen pasar muslim, dan menunjukkan komitmen
+                                        kualitas dari usaha Anda.</p>
+
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F3B433] text-white font-bold">✓</span>
+                                            <div>
+                                                <div class="font-semibold">Kepercayaan Konsumen</div>
+                                                <div class="text-sm text-gray-600">Meningkatkan kemungkinan pembelian
+                                                    ulang dan rekomendasi.</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-primary text-white font-bold">⚖</span>
+                                            <div>
+                                                <div class="font-semibold">Kepatuhan Produk</div>
+                                                <div class="text-sm text-gray-600">Bukti formal bahwa produk memenuhi
+                                                    standar yang diakui.</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#25D366] text-white font-bold">★</span>
+                                            <div>
+                                                <div class="font-semibold">Peluang Distribusi</div>
+                                                <div class="text-sm text-gray-600">Lebih mudah masuk ke toko,
+                                                    marketplace, dan segmen ekspor tertentu.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+
+                                </div>
+
+                                <!-- Right: quick card -->
+                                <div class="bg-white rounded-xl shadow p-6">
+                                    <div class="mb-3">
+                                        <img src="img/placeholder-halal.jpg" alt="Ilustrasi Halal"
+                                            class="w-full rounded-md object-cover h-44">
+                                    </div>
+                                    <div class="text-sm text-gray-600 mb-3">Contoh Kategori</div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Produk kemasan</div>
+                                            <div class="text-primary font-semibold">Cocok</div>
+                                        </div>
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Bumbu & rempah</div>
+                                            <div class="text-primary font-semibold">Sangat Cocok</div>
+                                        </div>
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Minuman</div>
+                                            <div class="text-primary font-semibold">Direkomendasikan</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- PIRT Panel (hidden by default) -->
+                        <div id="panel-pirt" role="tabpanel" aria-labelledby="tab-pirt" class="hidden">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+                                <!-- Left: content -->
+                                <div>
+                                    <h4 class="text-2xl font-bold text-primary mb-3">Untuk Produk Makanan & Olahan
+                                        Rumah Tangga</h4>
+                                    <p class="text-gray-700 mb-4">Izin PIRT menegaskan bahwa produk Anda aman
+                                        dikonsumsi, diproduksi secara higienis, dan layak dipasarkan secara luas.</p>
+
+                                    <ul class="space-y-3 mb-6">
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#F3B433] text-white font-bold">✓</span>
+                                            <div>
+                                                <div class="font-semibold">Keamanan Pangan</div>
+                                                <div class="text-sm text-gray-600">Standar higienis dan proses produksi
+                                                    yang diawasi.</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-primary text-white font-bold">🔬</span>
+                                            <div>
+                                                <div class="font-semibold">Kelayakan Edar</div>
+                                                <div class="text-sm text-gray-600">Mempermudah pemasaran ke retail &
+                                                    pasar modern.</div>
+                                            </div>
+                                        </li>
+
+                                        <li class="flex items-start gap-3">
+                                            <span
+                                                class="mt-1 inline-flex items-center justify-center w-9 h-9 rounded-lg bg-[#25D366] text-white font-bold">★</span>
+                                            <div>
+                                                <div class="font-semibold">Perlindungan Konsumen</div>
+                                                <div class="text-sm text-gray-600">Memberi rasa aman bagi pembeli
+                                                    terkait kebersihan dan keamanan.</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Right: quick card -->
+                                <div class="bg-white rounded-xl shadow p-6">
+                                    <div class="mb-3">
+                                        <img src="img/placeholder-pirt.jpg" alt="Ilustrasi PIRT"
+                                            class="w-full rounded-md object-cover h-44">
+                                    </div>
+                                    <div class="text-sm text-gray-600 mb-3">Contoh Kategori</div>
+                                    <div class="flex flex-col gap-2">
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Kue & pastry</div>
+                                            <div class="text-primary font-semibold">Cocok</div>
+                                        </div>
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Produk olahan rumahan</div>
+                                            <div class="text-primary font-semibold">Sangat Cocok</div>
+                                        </div>
+                                        <div class="flex items-center justify-between text-sm">
+                                            <div class="text-gray-700">Makanan siap saji</div>
+                                            <div class="text-primary font-semibold">Direkomendasikan</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2) Kewajiban Sertifikasi (placed after benefits) -->
+            <div class="bg-[#F7FBFF] rounded-2xl p-6 md:p-10 mb-10 border border-[#E6F0FA]">
+                <div class="flex items-start gap-6">
+                    <div class="flex-shrink-0">
+                        <div
+                            class="w-14 h-14 rounded-lg bg-primary flex items-center justify-center text-white font-bold text-xl">
+                            !</div>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-bold text-primary mb-2">Kewajiban & Hal yang Perlu Disiapkan</h4>
+                        <p class="text-gray-700 mb-4">Setelah memahami manfaat, berikut beberapa kewajiban dan hal yang
+                            perlu dipenuhi agar proses sertifikasi berjalan lancar.</p>
+
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                            <div class="bg-white rounded-lg p-4 shadow">
+                                <div class="font-semibold text-primary mb-2">Standar Produksi</div>
+                                <div class="text-sm text-gray-600">Kebersihan ruang produksi, alur kerja, dan praktik
+                                    higienis.</div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4 shadow">
+                                <div class="font-semibold text-primary mb-2">Label & Kemasan</div>
+                                <div class="text-sm text-gray-600">Informasi produk, komposisi, tanggal kadaluarsa, dan
+                                    informasi allergen.</div>
+                            </div>
+
+                            <div class="bg-white rounded-lg p-4 shadow">
+                                <div class="font-semibold text-primary mb-2">Dokumen & Administrasi</div>
+                                <div class="text-sm text-gray-600">Identitas usaha, daftar bahan baku, foto proses
+                                    produksi, dan lain-lain.</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Tab switching script (keeps markup simple & accessible) -->
+
+    </section>
+
+
+
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-5xl mx-auto px-6">
+            <div class="mb-6">
+                <span
+                    class="inline-flex items-center gap-2 rounded-full bg-accent text-black text-sm font-semibold px-4 py-1">
+                    📝 Persyaratan Pendaftaran Halal dan PIRT
+                </span>
+
+                <h2 class="mt-3 text-3xl font-bold leading-tight sm:text-4xl text-gray-900">
+                    <span class="underline decoration-accent underline-offset-4">
+                        Siap Mendaftarkan Produk Anda?
+                    </span>
+                    <span class="text-black">
+                        Ini Persyaratan yang Perlu Anda Siapkan
+                    </span>
+                </h2>
+
+
+                <p class="mt-3 text-slate-600 max-w-2xl">Lengkapi dokumen berikut untuk proses pendaftaran Sertifikat
+                    Halal dan PIRT</p>
+            </div>
+
+            <!-- Tab Navigation with Enhanced UI -->
+            <div class="mb-8">
+                <div class="bg-white rounded-lg shadow-sm p-1 inline-flex">
+                    <button onclick="showTab('halal')" id="halal-tab"
+                        class="tab-button flex items-center gap-2 px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                        Persyaratan Halal
+                    </button>
+                    <button onclick="showTab('pirt')" id="pirt-tab"
+                        class="tab-button flex items-center gap-2 px-6 py-3 rounded-md font-medium text-sm transition-all duration-200 text-gray-600 hover:text-gray-900 hover:bg-gray-50">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                            </path>
+                        </svg>
+                        Persyaratan PIRT
+                    </button>
+                </div>
+            </div>
+
+            <!-- Halal Requirements Tab -->
+            <div id="halal-content" class="tab-content">
+                <div
+                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2 bg-green-100 rounded-lg">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran Halal</h3>
+                        </div>
+                        <p class="mt-1 text-sm text-slate-600">Pastikan Anda memiliki data-data berikut untuk proses
+                            pendaftaran Sertifikat Halal.</p>
+                    </div>
+
+                    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Nama Pemohon</p>
+                                <p class="text-sm text-slate-600">Pribadi / Badan Usaha</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Bidang Usaha</p>
+                                <p class="text-sm text-slate-600">Deskripsi singkat usaha</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Alamat Lengkap</p>
+                                <p class="text-sm text-slate-600">Kota, Kecamatan, Kelurahan</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Dokumen Identitas</p>
+                                <p class="text-sm text-slate-600">KTP, NPWP, dan NIB</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Informasi Kontak</p>
+                                <p class="text-sm text-slate-600">Nomor Telepon dan Email</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Foto Produk</p>
+                                <p class="text-sm text-slate-600">Format JPG/PNG</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Komposisi</p>
+                                <p class="text-sm text-slate-600">Daftar semua bahan</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Berat Netto</p>
+                                <p class="text-sm text-slate-600">Berat bersih produk</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Daftar Bahan Baku</p>
+                                <p class="text-sm text-slate-600">Beserta merek</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-green-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-green-500/25 group-hover:bg-green-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Cara Pembuatan</p>
+                                <p class="text-sm text-slate-600">Proses produksi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
+                        </div>
+                        <p class="mt-1 text-sm text-slate-600">Setelah semua proses selesai, berikut dokumen yang akan
+                            Anda terima.</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li
+                            class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                            <span class="inline-flex h-6 w-6 items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-500">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p>Sertifikat Halal <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
+                                    30-60 hari)</span></p>
+                        </li>
+                        <li
+                            class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                            <span class="inline-flex h-6 w-6 items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-500">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p>Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- PIRT Requirements Tab -->
+            <div id="pirt-content" class="tab-content hidden">
+                <div
+                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 transform transition-all duration-300">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Dokumen & Data Pendaftaran PIRT</h3>
+                        </div>
+                        <p class="mt-1 text-sm text-slate-600">Pastikan Anda memiliki data-data berikut untuk proses
+                            pendaftaran PIRT.</p>
+                    </div>
+
+                    <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Nama Pemohon</p>
+                                <p class="text-sm text-slate-600">Pribadi / Badan Usaha</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Bidang Usaha</p>
+                                <p class="text-sm text-slate-600">Deskripsi singkat usaha</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Alamat Lengkap</p>
+                                <p class="text-sm text-slate-600">Kota, Kecamatan, Kelurahan</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Dokumen Identitas</p>
+                                <p class="text-sm text-slate-600">KTP, NPWP, dan NIB</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Informasi Kontak</p>
+                                <p class="text-sm text-slate-600">Nomor Telepon dan Email</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Foto Produk</p>
+                                <p class="text-sm text-slate-600">Dengan kemasan terlihat jelas</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Jenis Kemasan</p>
+                                <p class="text-sm text-slate-600">Plastik, toples, dll</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Proses Produksi</p>
+                                <p class="text-sm text-slate-600">Dipanggang, digoreng, dll</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Masa Kadaluarsa</p>
+                                <p class="text-sm text-slate-600">1 Minggu, 1 Bulan, dll</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Isi Bersih</p>
+                                <p class="text-sm text-slate-600">450 gram, dll</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Komposisi</p>
+                                <p class="text-sm text-slate-600">Daftar semua bahan</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">NIB Pribadi</p>
+                                <p class="text-sm text-slate-600">Jika ada, lampirkan akun OSS</p>
+                            </div>
+                        </div>
+                        <div
+                            class="flex items-start gap-3 rounded-xl bg-gray-50 p-4 hover:bg-blue-50 transition-colors duration-200 cursor-pointer group">
+                            <span
+                                class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-blue-500/25 group-hover:bg-blue-500/40 transition-colors">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-blue-700">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <div>
+                                <p class="font-semibold text-gray-800">Tanda Tangan</p>
+                                <p class="text-sm text-slate-600">Di atas kertas putih</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="rounded-2xl bg-white p-6 shadow-lg ring-1 ring-slate-200 mt-6 transform transition-all duration-300">
+                    <div class="mb-6">
+                        <div class="flex items-center gap-3 mb-3">
+                            <div class="p-2 bg-blue-100 rounded-lg">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <h3 class="text-xl font-bold text-gray-800">Dokumen yang Akan Anda Dapatkan</h3>
+                        </div>
+                        <p class="mt-1 text-sm text-slate-600">Setelah semua proses selesai, berikut dokumen yang akan
+                            Anda terima.</p>
+                    </div>
+                    <ul class="space-y-3 text-gray-700">
+                        <li
+                            class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                            <span class="inline-flex h-6 w-6 items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-500">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p>Sertifikat PIRT <span class="italic text-sm text-slate-500">(proses penerbitan sekitar
+                                    14-30 hari)</span></p>
+                        </li>
+                        <li
+                            class="flex items-start gap-3 p-3 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+                            <span class="inline-flex h-6 w-6 items-center justify-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                    class="h-4 w-4 text-green-500">
+                                    <path fill-rule="evenodd"
+                                        d="M2.25 12a9.75 9.75 0 1119.5 0 9.75 9.75 0 01-19.5 0zm14.03-2.47a.75.75 0 10-1.06-1.06l-5.22 5.22-1.72-1.72a.75.75 0 10-1.06 1.06l2.25 2.25c.3.3.79.3 1.09 0l5.72-5.75z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </span>
+                            <p>Masa aktif sertifikat <span class="font-bold">2 tahun</span> dan dapat diperpanjang.</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="mt-6">
+                <div
+                    class="flex flex-col gap-4 rounded-xl bg-slate-100 p-6 sm:flex-row sm:items-center sm:justify-between">
+                    <div>
+                        <p class="text-base text-gray-800 font-semibold">Dokumen belum lengkap?</p>
+                        <p class="text-sm text-slate-600 mt-1">Tim kami siap membantu siapkan dan cek kelayakan dokumen
+                            Anda secara gratis.</p>
+                    </div>
+                    <a href="https://api.whatsapp.com/send?phone=6282151519925&text=Halo%20admin%20saya%20dari%20website,%20ingin%20konsultasi%20terkait%20pendaftaran%20halal%20dan%20pirt"
+                        target="_blank" rel="noopener noreferrer"
+                        class="inline-flex items-center justify-center rounded-lg border border-[#25D366] bg-white px-6 py-3 font-semibold text-[#25D366] hover:bg-[#25D366] hover:text-white transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">
+                        <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                        </svg>
+                        Hubungi Tim Kami
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section dengan Background Gambar -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Daftarkan Produk Anda Sekarang</h2>
+                <p class="cta-description">
+                    Jangan biarkan produk Anda tanpa legalitas. Dapatkan sertifikasi Halal dan PIRT untuk meningkatkan
+                    kepercayaan pelanggan dan memperluas pasar.
+                </p>
+
+                <div class="trust-signals">
+                    <div class="trust-item">
+                        <span class="check-icon">✓</span>
+                        <span>Dipercaya 100+ brand</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="check-icon">✓</span>
+                        <span>Proses resmi DJKI</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="check-icon">✓</span>
+                        <span>Konsultasi langsung via WhatsApp</span>
+                    </div>
+                </div>
+
+                <a href="https://api.whatsapp.com/send?phone=6282151519925&text=Halo%20admin%20saya%20dari%20website,%20ingin%20konsultasi%20terkait%20pendaftaran%20halal%20dan%20pirt"
+                    target="_blank" rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center rounded-lg border border-[#25D366] bg-[#25D366] px-6 py-3 font-semibold text-white hover:bg-white hover:text-[#25D366] transition-all duration-200 transform hover:scale-105 shadow-md hover:shadow-lg">
+                    <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.149-.67.149-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414-.074-.123-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z" />
+                    </svg>
+                    Konsultasi Gratis
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Paket Harga -->
+    <section id="harga" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">
+                    Paket Harga Terjangkau
+                </h2>
+                <p class="text-gray-600">Pilih paket sesuai kebutuhan bisnis Anda</p>
+            </div>
+
+            <!-- GRID 2 CARD -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 place-items-center">
+
+                <!-- CARD PIRT -->
+                <div class="bg-white rounded-2xl p-8 shadow-lg border border-gray-200 
+           transition duration-300 w-full max-w-md
+           hover:-translate-y-2 
+           hover:border-transparent 
+           hover:bg-gradient-to-r hover:from-primary/10 hover:to-accent/10 
+           hover:shadow-xl">
+
+                    <div class="flex items-center gap-3 mb-6">
+                        <div class="w-12 h-12 bg-blue-50 rounded-xl flex items-center justify-center text-2xl">🥫</div>
+                        <h3 class="text-xl font-bold text-gray-900">PIRT</h3>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-sm text-gray-600 mb-1">Hanya</div>
+                        <div class="text-3xl font-extrabold text-primary">Rp 399.000</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Pendaftaran nomor
+                            PIRT</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Pendampingan
+                            penyuluhan</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Review label
+                            kemasan</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Buku panduan
+                            inspeksi</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Estimasi: 7–21 hari
+                        </li>
+                    </ul>
+
+                    <a href="https://wa.me/6282151519925?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20layanan%20Merek%20%22PIRT%22%20dengan%20harga%20%22Rp399.000%22.%20Saya%20dari%20website.%20Terimakasih."
+                        target="_blank"
+                        class="block w-full text-center px-4 py-3 bg-primary hover:bg-blue-800 text-white rounded-lg font-semibold transition">
+                        Pesan PIRT
+                    </a>
+                </div>
+
+                <!-- CARD HALAL + PIRT (BEST SELLER) -->
+                <div class="bg-white rounded-2xl p-8 shadow-xl border-2 border-accent relative w-full max-w-md 
+           scale-[1.05] transition duration-300
+           hover:scale-[1.08] hover:-translate-y-1
+           hover:border-transparent
+           hover:bg-gradient-to-r hover:from-accent/20 hover:to-primary/20
+           hover:shadow-[0_10px_40px_rgba(0,0,0,0.15)]">
+
+                    <!-- BADGE PREMIUM -->
+                    <div class="absolute -top-4 left-1/2 -translate-x-1/2 bg-accent text-gray-900 text-xs font-bold 
+                           px-5 py-1.5 rounded-full shadow-lg tracking-wide">
+                        ⭐ BEST SELLER
+                    </div>
+
+                    <div class="flex items-center gap-3 mb-6 mt-2">
+                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl">⚖️</div>
+                        <h3 class="text-xl font-bold text-gray-900">Halal + PIRT</h3>
+                    </div>
+
+                    <div class="mb-6">
+                        <div class="text-sm text-gray-600 mb-1">Paket Paling Lengkap</div>
+                        <div class="text-3xl font-extrabold text-primary">Rp 999.000</div>
+                        <div class="text-xs text-gray-500 mt-1">*Harga tetap sama meskipun hanya ambil Halal saja</div>
+                    </div>
+
+                    <ul class="space-y-3 mb-8 text-sm text-gray-700">
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span><strong>Sertifikasi
+                                Halal (Self Declare)</strong></li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span><strong>Free
+                                PIRT</strong> (bonus tanpa biaya tambahan)</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Jika hanya ingin
+                            Halal saja → <strong>harga tetap Rp 999.000</strong></li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Semua dokumen
+                            disiapkan</li>
+                        <li class="flex items-start gap-2"><span class="text-green-600 mt-1">✓</span>Pendampingan proses
+                            sampai selesai</li>
+                    </ul>
+
+                    <a href="https://wa.me/6282151519925?text=Halo%20Admin%2C%20saya%20tertarik%20dengan%20layanan%20Merek%20%22Halal%20%2B%20PIRT%22%20dengan%20harga%20%22Rp999.000%22.%20Saya%20dari%20website.%20Terimakasih."
+                        target="_blank"
+                        class="block w-full text-center px-4 py-3 bg-primary hover:bg-blue-800 text-white rounded-lg font-semibold transition">
+                        Pesan Halal + PIRT
+                    </a>
+                </div>
+
+            </div>
+
+            <p class="text-center text-sm text-gray-500 mt-8">
+                *Harga dapat berubah sesuai kompleksitas produk. Tersedia opsi cicilan untuk memudahkan pembayaran.
+            </p>
+        </div>
+    </section>
+
+
+    <!-- FAQ untuk Landing Page Merek -->
+    <section class="bg-gray-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 w-full">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-gray mb-4">
+                    <i class="fas fa-question-circle text-[#FF8C00] mr-2"></i>
+                    Pertanyaan yang Sering Diajukan
+                </h2>
+                <p class="text-gray-600 text-sm sm:text-base lg:text-lg max-w-2xl mx-auto">
+                    Jawaban singkat seputar pendaftaran merek di DJKI melalui Akses Legal Indonesia
+                </p>
+            </div>
+
+            <div class="space-y-4">
+
+                <!-- FAQ 1 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4  overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFAQ(1)">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray pr-4">
+                            Apa perbedaan Halal & PIRT
+                        </h3>
+                        <svg id="icon-1" class="w-6 h-6 text-gray transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="answer-1" class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                            <ul class="list-disc list-inside mt-2 ml-4 text-gray-700">
+                                <strong>HALAL</strong> adalah sertifikasi yang membuktikan produk halal sesuai syariat
+                                Islam dari segi
+                                bahan dan proses produksi. <strong>PIRT</strong> adalah izin edar untuk produk pangan
+                                industri rumah
+                                tangga yang dikeluarkan Dinas Kesehatan
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4  overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFAQ(2)">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray pr-4">
+                            Apakah usaha rumahan bisa daftar sertifikasi?
+                        </h3>
+                        <svg id="icon-2" class="w-6 h-6 text-gray transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="answer-2" class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                            <ul class="list-disc list-inside mt-2 ml-4 text-gray-700">
+                                Ya, sangat bisa! Untuk usaha rumahan, Anda bisa mulai dengan <strong>PIRT</strong> untuk
+                                produk
+                                pangan. Sedangkan untuk <strong>Halal</strong>, bisa diurus baik untuk usaha rumahan
+                                maupun
+                                skala industri. <strong>BPOM</strong> biasanya untuk produk yang sudah memiliki
+                                fasilitas
+                                produksi yang memenuhi standar.
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4  overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFAQ(3)">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray pr-4">
+                            Berapa lama proses sertifikasi?
+                        </h3>
+                        <svg id="icon-3" class="w-6 h-6 text-gray transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="answer-3" class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                            <div class="mt-4 text-gray-600 leading-relaxed">
+                                Waktu proses bervariasi tergantung jenis sertifikasi: <br />
+                                • <strong>PIRT:</strong> 7-21 hari kerja<br />
+                                • <strong>Halal:</strong> 15-40 hari kerja<br />
+                                Waktu dapat lebih cepat jika dokumen lengkap dan tidak ada revisi.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4  overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFAQ(4)">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray pr-4">
+                            Apakah bisa daftar tanpa NIB?
+                        </h3>
+                        <svg id="icon-4" class="w-6 h-6 text-gray transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="answer-4" class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                            <div class="mt-4 text-gray-600 leading-relaxed">
+                                NIB (Nomor Induk Berusaha) adalah syarat wajib untuk mengurus sertifikasi Halal, PIRT,
+                                dan
+                                BPOM.
+                                Namun tenang, kami juga bisa membantu Anda mengurus NIB terlebih dahulu jika belum
+                                memiliki.
+                                Prosesnya cepat dan mudah melalui sistem OSS.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!-- FAQ 7 -->
+                <div class="bg-white rounded-xl shadow-lg border-t-4  overflow-hidden">
+                    <button class="w-full px-6 py-5 text-left flex justify-between items-center" onclick="toggleFAQ(7)">
+                        <h3 class="text-base sm:text-lg font-semibold text-gray pr-4">
+                            Bagaimana cara memulai?
+                        </h3>
+                        <svg id="icon-7" class="w-6 h-6 text-gray transform transition-transform duration-300"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    <div id="answer-7" class="faq-answer max-h-0 overflow-hidden transition-all duration-500">
+                        <div class="px-6 pb-6 pt-2 border-t border-gray-200">
+                            <p class="text-gray-700">Proses lebih cepat & aman, dokumen lebih rapi, ada monitoring
+                                saat
+                                publikasi, dan pendampingan sampai sertifikat resmi keluar. Hemat waktu, minim
+                                risiko.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Logo Klien -->
+    <section class="py-16 bg-white">
+        <div class="max-w-full mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-10">
+                <h2 class="text-2xl font-bold text-gray-900 mb-2">
+                    Dipercaya Oleh Ribuan UMKM di Indonesia
+                </h2>
+                <p class="text-gray-600">Beberapa produk UMKM yang telah kami bantu daftarkan</p>
+            </div>
+
+            <div class="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-5">
+
+                <!-- Template (pakai rasio 4:5 untuk tampilan paling rapi) -->
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-1.jpg" alt="Testimoni 1" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-2.jpeg" alt="Testimoni 2" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-3.jpg" alt="Testimoni 3" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-4.jpg" alt="Testimoni 4" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-5.jpg" alt="Testimoni 5" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-6.jpg" alt="Testimoni 6" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-7.jpg" alt="Testimoni 7" class="w-full h-full object-cover" />
+                </div>
+
+                <div class="relative w-full overflow-hidden rounded-xl bg-gray-100 border border-gray-200 
+                        hover:shadow-xl hover:-translate-y-1 transition-all duration-300" style="aspect-ratio: 4/5;">
+                    <img src="testimoni/testimoni-8.jpg" alt="Testimoni 8" class="w-full h-full object-cover" />
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-6 md:px-12 lg:px-20">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+
+                <!-- Company Info -->
+                <div>
+                    <img src="img/Logo Ali putih Panjang.png" alt="logo ali" class="w-36 h-auto mb-4 max-w-full">
+                    <p class="text-sm text-gray-300 leading-relaxed mb-4">
+                        Akses Legal Indonesia merupakan perusahaan berbasis digital yang bergerak dalam bidang Jasa
+                        konsultasi hukum dan pembuatan legalitas dokumen perusahaan seperti pendirian badan hukum
+                        dan
+                        Pendaftaran Halal, Pirt.
+                    </p>
+
+                </div>
+
+                <!-- Locations -->
+                <div class="text-left">
+                    <h3 class="text-lg font-semibold text-yellow-400 mb-3">TEMUKAN KAMI DI</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="https://maps.app.goo.gl/YHniqHZKY6UvpeJD9" target="_blank"
+                                class="hover:text-yellow-400">📍 Jakarta</a></li>
+                        <li><a href="https://maps.app.goo.gl/kK8pU5hkoKkv4H4CA" target="_blank"
+                                class="hover:text-yellow-400">📍 Surabaya</a></li>
+                        <li><a href="https://maps.app.goo.gl/nKEg9KjAwpmQkqF7A" target="_blank"
+                                class="hover:text-yellow-400">📍 Makassar</a></li>
+                        <li><a href="https://maps.app.goo.gl/1Do9QRCz9TM8pcP56" target="_blank"
+                                class="hover:text-yellow-400">📍 Kendari</a></li>
+                        <li><a href="https://maps.app.goo.gl/nY6seqYZHRUYwTYb8" target="_blank"
+                                class="hover:text-yellow-400">📍 Palu</a></li>
+                    </ul>
+                </div>
+
+                <!-- Apps -->
+                <div class="text-left md:text-center">
+                    <h3 class="text-lg font-semibold text-yellow-400 mb-4">DOWNLOAD APPS</h3>
+                    <div class="flex flex-col gap-4 items-start md:items-center">
+                        <a href="https://play.google.com/store/apps/details?id=com.wasdlabs.ali&hl=in" target="_blank">
+                            <img src="img/google play.png" alt="Google Play" class="h-24 max-w-full">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Bottom -->
+            <div class="border-t border-gray-700 mt-8 pt-6 w-full">
+                <p class="text-center text-sm text-gray-400">2025 © halalpirt.akseslegal.id</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script>
+        function showTab(tabName) {
+            // Hide all tab contents with animation
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => {
+                content.style.opacity = '0';
+                content.style.transform = 'translateY(10px)';
+                setTimeout(() => {
+                    content.classList.add('hidden');
+                }, 200);
+            });
+
+            // Remove active styling from all tabs
+            const tabs = document.querySelectorAll('.tab-button');
+            tabs.forEach(tab => {
+                tab.classList.remove('bg-accent', 'text-white', 'shadow-md');
+                tab.classList.add('text-gray-600', 'hover:text-gray-900', 'hover:bg-gray-50');
+            });
+
+            // Show selected tab content with animation
+            setTimeout(() => {
+                const selectedContent = document.getElementById(tabName + '-content');
+                selectedContent.classList.remove('hidden');
+                setTimeout(() => {
+                    selectedContent.style.opacity = '1';
+                    selectedContent.style.transform = 'translateY(0)';
+                }, 50);
+            }, 200);
+
+            // Add active styling to selected tab
+            const selectedTab = document.getElementById(tabName + '-tab');
+            selectedTab.classList.remove('text-gray-600', 'hover:text-gray-900', 'hover:bg-gray-50');
+            selectedTab.classList.add('bg-accent', 'text-white', 'shadow-md');
+        }
+
+        function openPanel(name) {
+            const halalPanel = document.getElementById('panel-halal');
+            const pirtPanel = document.getElementById('panel-pirt');
+            const tabHalal = document.getElementById('tab-halal');
+            const tabPirt = document.getElementById('tab-pirt');
+
+            if (name === 'halal') {
+                halalPanel.classList.remove('hidden');
+                pirtPanel.classList.add('hidden');
+                tabHalal.setAttribute('aria-selected', 'true');
+                tabPirt.setAttribute('aria-selected', 'false');
+                tabHalal.classList.add('bg-white', 'shadow-md');
+                tabPirt.classList.remove('bg-white', 'shadow-md');
+            } else {
+                halalPanel.classList.add('hidden');
+                pirtPanel.classList.remove('hidden');
+                tabHalal.setAttribute('aria-selected', 'false');
+                tabPirt.setAttribute('aria-selected', 'true');
+                tabPirt.classList.add('bg-white', 'shadow-md');
+                tabHalal.classList.remove('bg-white', 'shadow-md');
+            }
+        }
+
+        // optional: make keyboard accessible (left/right)
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+                const selected = document.querySelector('[role="tab"][aria-selected="true"]');
+                if (!selected) return;
+                if (e.key === 'ArrowRight') {
+                    if (selected.id === 'tab-halal') openPanel('pirt');
+                } else {
+                    if (selected.id === 'tab-pirt') openPanel('halal');
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set the initial state for the tabs
+            const halalTab = document.getElementById('halal-tab');
+            const pirtTab = document.getElementById('pirt-tab');
+
+            // Set the first tab as active by default
+            halalTab.classList.add('bg-accent', 'text-white', 'shadow-md');
+            halalTab.classList.remove('text-gray-600', 'hover:text-gray-900', 'hover:bg-gray-50');
+        });
+        // Smooth scroll untuk anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const href = this.getAttribute('href');
+                if (href !== '#' && href.length > 1) {
+                    e.preventDefault();
+                    const target = document.querySelector(href);
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                }
+            });
+        });
+
+        // Animasi on scroll (simple fade-in)
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe semua section kecuali hero
+        document.querySelectorAll('section:not(.hero-section)').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+
+        // Auto-close details lain saat satu dibuka (untuk FAQ)
+        const details = document.querySelectorAll('details');
+        details.forEach((detail) => {
+            detail.addEventListener('toggle', () => {
+                if (detail.open) {
+                    details.forEach((otherDetail) => {
+                        if (otherDetail !== detail && otherDetail.open) {
+                            otherDetail.open = false;
+                        }
+                    });
+                }
+            });
+        });
+
+        // Highlight active section di sticky nav
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section[id]');
+            const scrollPosition = window.scrollY + 200;
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+                    document.querySelectorAll(`a[href="#${sectionId}"]`).forEach(link => {
+                        link.classList.add('active');
+                    });
+                } else {
+                    document.querySelectorAll(`a[href="#${sectionId}"]`).forEach(link => {
+                        link.classList.remove('active');
+                    });
+                }
+            });
+        });
+        // Menggunakan sintaks modern untuk fungsi JavaScript
+        function toggleFAQ(id) {
+            const answer = document.getElementById(`answer-${id}`);
+            const icon = document.getElementById(`icon-${id}`);
+
+            // Cek jika answer sedang terbuka
+            const isOpen = answer.classList.contains('active');
+
+            // Tutup semua FAQ yang terbuka
+            const allAnswers = document.querySelectorAll('.faq-answer');
+            allAnswers.forEach(item => {
+                if (item.classList.contains('active')) {
+                    item.classList.remove('active');
+                    item.style.maxHeight = '0px';
+                    // Cari ikon yang terkait dan putar kembali
+                    const associatedIcon = item.closest('.rounded-xl').querySelector('svg');
+                    associatedIcon.classList.remove('rotate-180');
+                }
+            });
+
+            // Jika item yang diklik sebelumnya tidak terbuka, buka sekarang
+            if (!isOpen) {
+                answer.classList.add('active');
+                // Menggunakan scrollHeight untuk mendapatkan tinggi konten secara dinamis
+                answer.style.maxHeight = answer.scrollHeight + 'px';
+                icon.classList.add('rotate-180');
+            }
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const tabButtons = document.querySelectorAll('.tab-btn');
+            const tabPanels = document.querySelectorAll('.tab-panel');
+
+            tabButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    // Hapus status 'selected' dari semua tombol
+                    tabButtons.forEach(btn => btn.setAttribute('aria-selected', 'false'));
+
+                    // Sembunyikan semua panel
+                    tabPanels.forEach(panel => panel.classList.add('hidden'));
+
+                    // Atur tombol yang diklik menjadi 'selected'
+                    button.setAttribute('aria-selected', 'true');
+
+                    // Tampilkan panel yang sesuai
+                    const targetPanelId = 'panel-' + button.dataset.tab;
+                    const targetPanel = document.getElementById(targetPanelId);
+                    if (targetPanel) {
+                        targetPanel.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+
+        // Add shake animation on page load
+        window.addEventListener('load', function () {
+            const alertContainer = document.querySelector('.alert-container');
+            alertContainer.classList.add('alert-shake');
+
+            // Remove shake class after animation completes
+            setTimeout(() => {
+                alertContainer.classList.remove('alert-shake');
+            }, 500);
+
+            // Repeat shake every 10 seconds
+            setInterval(() => {
+                alertContainer.classList.add('alert-shake');
+                setTimeout(() => {
+                    alertContainer.classList.remove('alert-shake');
+                }, 500);
+            }, 10000);
+        });
+    </script>
+</body>
+
+</html>
